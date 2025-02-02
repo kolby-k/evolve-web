@@ -1,0 +1,31 @@
+.container {
+  display:block;
+  width: 100%;
+  flex-direction: row;
+  align-self: flex-end;
+  height: 10em;
+  background-color: aqua;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+
+
+.companyName {
+  font-size: 2em;
+}
+
+.card {
+  flex-direction: column;
+  padding: 1em;
+}
+
+.slogan {
+  color: #888;
+}

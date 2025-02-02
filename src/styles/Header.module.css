@@ -1,0 +1,47 @@
+.container { 
+    display: block;
+    position: relative;
+    padding: 1em;
+}
+
+.header {
+ height: 7em;
+ display: flex;
+ align-content: flex-end;
+ justify-content: space-around;
+ align-self: center;
+ flex-direction: row;
+}
+
+.logoContainer {
+   position: absolute;
+   left: 5%;
+   top: 25%;
+  }
+
+  .nav {
+    display: block;
+    align-self: center;
+  }
+
+.navList {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 2em;
+    list-style-type: none;
+    gap: 5em;
+}
+
+.link {
+   list-style: none;
+   font-size: 1.15em;
+   color: #eaeaea;
+}
+
+
+@media (max-width: 768px) {
+    .logoContainer {
+        display: none;
+    }
+}
+
