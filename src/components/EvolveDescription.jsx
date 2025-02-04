@@ -1,17 +1,47 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/Home.module.css";
+import DownloadButton from "./DownloadButton";
 
 function EvolveDescription() {
+  const ref = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing after it becomes visible
+        }
+      },
+      { threshold: 0.2 } // Trigger when 20% of the element is visible
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect(); // Cleanup observer
+  }, []);
+
   return (
-    <div className={styles.descriptionContainer}>
-      <h3 className={styles.heading}>Evolve - Your Ultimate Gym Companion</h3>
-      <p className={styles.description}>
-        Achieve your fitness goals with ease using Evolve. Track every rep in
-        real time, review your complete workout history with detailed insights,
-        and confidently build on your progress. Save your favorite workouts as
-        templates for quick repetition, and explore a diverse library of over
-        250 exercises to keep your routine fresh and engaging.
-      </p>
+    <div
+      ref={ref}
+      className={`${styles.descriptionContainer} ${
+        isVisible ? styles.fadeIn : ""
+      }`}
+    >
+      <h3 className={styles.heading}>
+        Track every workout. Gain Insights. Build consistent routines. Discover
+        new exercises.
+        <span style={{ color: "#09002b" }}>
+          {" "}
+          Ready to meet your ultimate gym companion?
+        </span>
+      </h3>
+      <div className={styles.descriptionButtonContainer}>
+        <DownloadButton type="secondary" />
+      </div>
     </div>
   );
 }

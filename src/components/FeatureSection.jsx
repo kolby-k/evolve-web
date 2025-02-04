@@ -4,34 +4,34 @@ import Feature from "./Feature";
 
 const FEATURES = [
   {
-    title: "Visualize Your Progress",
+    title: "Easy, Effortless Tracking",
     description: [
-      "All of your workouts in one place",
-      "Insight into each exercise, set, and rep",
-      "See your progress to keep motivated",
+      "Track every rep in real time",
+      "Built-in rest timer to stay on pace",
+      "Save your own custom workout templates",
     ],
-    imageSource: "/src/assets/mockups/History Screen.png",
-    imageStyle: { height: "45em", width: "auto" },
+    imageSource: "/src/assets/mockups/Tracking Screen.png",
+    imageStyle: { height: "60em", width: "auto" },
   },
   {
     title: "Endless Exercise Library",
     description: [
-      "Over 250 exercises with video demos and instructions",
-      "Discover new exercises or stick with your favorites",
-      "Add your own custom exercises anytime",
+      "Explore over 250+ exercises",
+      "Master your technique with video demos",
+      "Create your own exercises",
     ],
     imageSource: "/src/assets/mockups/Exercises Screen.png",
-    imageStyle: { height: "50em", width: "auto" },
+    imageStyle: { height: "60em", width: "auto" },
   },
   {
-    title: "Easy, Effortless Tracking",
+    title: "Visualize Your Progress",
     description: [
-      "Track every rep in real time",
-      "Save your own workout templates",
-      "Review your results with helpful insights",
+      "View your workout history in detail",
+      "Gain insight into every set and rep performed",
+      "Stay motivated and progress towards your goals",
     ],
-    imageSource: "/src/assets/mockups/Tracking Screen.png",
-    imageStyle: { height: "50em", width: "auto" },
+    imageSource: "/src/assets/mockups/History Screen.png",
+    imageStyle: { height: "40em", width: "auto" },
   },
 ];
 
