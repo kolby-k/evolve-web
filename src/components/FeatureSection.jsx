@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "../styles/Features.module.css";
 import Feature from "./Feature";
+import TrackingScreen from "../assets/mockups/Tracking_Screen.png";
+import ExercisesScreen from "../assets/mockups/Exercises_Screen.png";
+import HistoryScreen from "../assets/mockups/History_Screen.png";
 
 const FEATURES = [
   {
@@ -10,7 +13,7 @@ const FEATURES = [
       "Built-in rest timer to stay on pace",
       "Save your own custom workout templates",
     ],
-    imageSource: "/src/assets/mockups/Tracking Screen.png",
+    imageSource: TrackingScreen,
     imageStyle: { height: "60em", width: "auto" },
   },
   {
@@ -20,7 +23,7 @@ const FEATURES = [
       "Master your technique with video demos",
       "Create your own exercises",
     ],
-    imageSource: "/src/assets/mockups/Exercises Screen.png",
+    imageSource: ExercisesScreen,
     imageStyle: { height: "60em", width: "auto" },
   },
   {
@@ -30,7 +33,7 @@ const FEATURES = [
       "Gain insight into every set and rep performed",
       "Stay motivated and progress towards your goals",
     ],
-    imageSource: "/src/assets/mockups/History Screen.png",
+    imageSource: HistoryScreen,
     imageStyle: { height: "40em", width: "auto" },
   },
 ];

@@ -1,5 +1,5 @@
 import React from "react";
-import MOCKUP_WELCOME from "../assets/mockups/WelcomeMockup.png";
+import WELCOME_SCREEN from "../assets/mockups/Welcome_Screen.png";
 import styles from "../styles/Home.module.css";
 import DownloadButton from "./DownloadButton";
 
@@ -15,7 +15,7 @@ function HeroSection() {
         </div>
         <div className={styles.rightSide}>
           <img
-            src={MOCKUP_WELCOME}
+            src={WELCOME_SCREEN}
             className={styles.featureImage}
             alt="App Mockup"
           />
