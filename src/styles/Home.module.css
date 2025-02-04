@@ -3,7 +3,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 2em
+    padding: 2em;
 }
 
 .heroContainer {
@@ -12,23 +12,23 @@
     width: 80%;
     margin: auto;
     justify-items: center;
-    background-color: rgba(44, 44, 44, 0);
 }
 
 .leftSide {
     display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-}
-
-.rightSide {
-    display: flex;
-    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 15em;
+    width: 50%;
+    overflow: hidden;
+}
+
+.rightSide {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
@@ -43,37 +43,86 @@
 }
 
 .featureImage {
-    height: 600px;
+    flex-shrink: 2;
+    height: 50em;
     width: auto;
 }
 
 .slogan { 
     line-height: 1em;
-    font-size: 1rem;
+    font-size: 1.1em;
 }
 
 .buttonContainer {
     display: block;
     align-self: center;
+    width: 100%;
     padding: 2em;
-    width: 50%;
 }
 
 .button {
-    width: 100%;
+    width: 80%;
+    font-size: 1.25em;
+    font-weight: 700;
 }
 
 .descriptionContainer {
     margin-top: 10em;
     display: block;
-    height: 50vh;
-    background-color: #48484891;
+    width: 50vw;
+    align-self: center;
+    background-color: #29292977;
+    border: 1px solid #383838;
+    border-radius: 1em;
+    box-shadow: 0px 10px 30px rgba(16, 19, 60, 0.57);  
+    padding: 2em;
+    padding-top: 0;
 }
+
 
 .heading {
     font-size: 2em;
 }
 
 .description {
-    font-size: 1em;
+    font-size: 1.2em;
 }
+
+
+.reviewSection {
+    margin-top: 10em;
+    margin-bottom: -2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.starContainer {
+    display: block;
+    padding: 2em;
+}
+
+.reviewContainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em;
+    gap: 2em;
+}
+
+.review {
+    display: block;
+    padding: 1em;
+}
+
+.reviewContent {
+    font-family: Roboto;
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+.reviewName {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+

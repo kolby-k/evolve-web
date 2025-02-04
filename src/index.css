@@ -1,8 +1,8 @@
 /* Global Styles Aligned with the Dark Theme Palette */
 :root {
   /* Typography & Base */
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: Geist, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.25;
   font-weight: 400;
 
   /* Color Scheme & Palette */
