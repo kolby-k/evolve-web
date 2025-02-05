@@ -10,11 +10,11 @@ function Feature({ content = {}, layout = "right" }) {
     );
 
   return (
-    <div className={styles.container}>
+    <>
       {layout === "right" ? (
-        <>
+        <div className={styles.containerRight}>
           <div className={styles.imageContainer}>
-            <img src={content.imageSource} style={content.imageStyle} />
+            <img src={content.imageSource} className={styles.imageStyle} />
           </div>
           <div className={styles.textContainer}>
             <h4 className={styles.title}>{content.title}</h4>
@@ -24,9 +24,9 @@ function Feature({ content = {}, layout = "right" }) {
               })}
             </ul>
           </div>
-        </>
+        </div>
       ) : (
-        <>
+        <div className={styles.containerLeft}>
           <div className={styles.textContainer}>
             <h4 className={styles.title}>{content.title}</h4>
             <ul className={styles.featureList}>
@@ -36,11 +36,11 @@ function Feature({ content = {}, layout = "right" }) {
             </ul>
           </div>
           <div className={styles.imageContainer}>
-            <img src={content.imageSource} style={content.imageStyle} />
+            <img src={content.imageSource} className={styles.imageStyle} />
           </div>
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 }
 

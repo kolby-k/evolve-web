@@ -9,7 +9,6 @@ button {
     color: #FFFFFF;
     cursor: pointer;
     transition: border-color 0.25s;
-    width: 60%;
     font-size: 1.25em;
     font-weight: 700;
   }
@@ -25,12 +24,6 @@ button {
     outline: 4px auto -webkit-focus-ring-color;
   }
   
-  .buttonContainer {
-    display: block;
-    align-self: center;
-    width: 100%;
-    padding: 2em;
-}
 
 
 .buttonSecondary {

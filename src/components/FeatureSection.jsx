@@ -14,7 +14,6 @@ const FEATURES = [
       "Save your own custom workout templates",
     ],
     imageSource: TrackingScreen,
-    imageStyle: { height: "60em", width: "auto" },
   },
   {
     title: "Endless Exercise Library",
@@ -24,7 +23,6 @@ const FEATURES = [
       "Create your own exercises",
     ],
     imageSource: ExercisesScreen,
-    imageStyle: { height: "60em", width: "auto" },
   },
   {
     title: "Visualize Your Progress",
@@ -34,7 +32,6 @@ const FEATURES = [
       "Stay motivated and progress towards your goals",
     ],
     imageSource: HistoryScreen,
-    imageStyle: { height: "40em", width: "auto" },
   },
 ];
 
