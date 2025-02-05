@@ -1,5 +1,5 @@
 import React from "react";
-import WELCOME_SCREEN from "../assets/mockups/Welcome_Screen.png";
+import WELCOME_SCREEN from "../assets/mockups/Welcome.webp";
 import styles from "../styles/Home.module.css";
 import DownloadButton from "./DownloadButton";
 

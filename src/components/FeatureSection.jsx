@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../styles/Features.module.css";
 import Feature from "./Feature";
-import TrackingScreen from "../assets/mockups/Tracking_Screen.png";
-import ExercisesScreen from "../assets/mockups/Exercises_Screen.png";
-import HistoryScreen from "../assets/mockups/History_Screen.png";
+import TrackingScreen from "../assets/mockups/Tracking.webp";
+import ExercisesScreen from "../assets/mockups/Exercises.webp";
+import HistoryScreen from "../assets/mockups/History.webp";
 
 const FEATURES = [
   {
