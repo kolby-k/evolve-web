@@ -11,30 +11,30 @@
 
 
 .bg {
-    position: relative; /* so the pseudo-element is positioned relative to .bg */
-    z-index: 0;
-    /* no direct opacity here */
-  }
-  
-  /* Pseudo-element to hold the transparent background */
-  .bg::before {
-    content: "";
-    position: absolute;
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0;
-    background: linear-gradient(
-        #121212,
-        #252424,
-        #0f2b598e      60%
+  position: relative; /* so the pseudo-element is positioned relative to .bg */
+  z-index: 0;
+  /* no direct opacity here */
+}
+
+/* Pseudo-element to hold the transparent background */
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background: linear-gradient(
+    #121212,
+    #252424,
+    #0f2b598e      60%
     );
     opacity: 0.2;     /* only this layer is transparent */
     z-index: -1;      /* ensures the background stays behind the .heroContainer */
     background-size: 200%, 200%;
   }
-
-.heroContainer {
+  
+  .heroContainer {
     display: flex;
     height: 85vh;
     width: 80%;
@@ -43,8 +43,7 @@
     justify-items: center;
     flex-wrap: wrap;
     padding-bottom: 10em;
-    z-index: 10;
-    opacity: 1;
+    text-align: center;
 }
 
 .homeContent {
@@ -61,6 +60,7 @@
     min-width: 50%;
     flex-direction: column;
     align-self: center;
+    padding-bottom: 10em;
 }
 
 .rightSide {
@@ -73,7 +73,7 @@
 }
 
 .title {
-    font-size: 4.5em;
+    font-size: 5em;
     line-height: 1em;
     margin: 0;
 }
@@ -186,8 +186,6 @@
 @media (max-width: 768px) {
   .heroContainer {
       flex-direction: column;  
-      height: auto;
-      text-align: center;
       padding-bottom: 2em;
       min-height: 80vh;
   }
@@ -200,6 +198,7 @@
   .leftSide {
     flex: none;
     width: 100%;
+    padding-bottom: 0;
 }
 
 .rightSide {
@@ -210,8 +209,7 @@
 }
 
 .featureImage {
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
     height: auto;
     object-fit: contain;
 }
@@ -224,7 +222,14 @@
     font-size: 2em;
 }
 
-
-
 }
 
+
+@media (max-width: 480px) {
+
+.featureImage {
+  max-width: 100%;
+  height: auto;
+}
+
+}

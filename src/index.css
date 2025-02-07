@@ -1,8 +1,8 @@
 /* Global Styles Aligned with the Dark Theme Palette */
 :root {
-  /* Typography & Base */
+
   font-family: Geist, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.25;
+  line-height: 1.1;
   font-weight: 400;
 
   /* Color Scheme & Palette */
@@ -17,19 +17,27 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* Inherit our primary background and text colors */
+  background-color: inherit;
+  color: inherit;
 }
 
 #root {
+  display: block;
   max-width: 100vw;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 
 a {
+  
   font-weight: 500;
   /* Accent color for links */
   color: #4169E1;
@@ -39,36 +47,6 @@ a {
 a:hover {
   /* Slightly darker shade of the accent for hover */
   color: #375ac7;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
-  /* Inherit our primary background and text colors */
-  background-color: inherit;
-  color: inherit;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin: 0;
-}
-
-
-
-.active-screen-container {
- display: flex;
- flex: 1;
- flex-direction: column;
-}
-
-.content-container {
- flex: 1;
- min-height: 100vh;
- background-color: #375ac7;
 }
 
 

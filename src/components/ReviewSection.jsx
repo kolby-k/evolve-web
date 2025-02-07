@@ -32,9 +32,9 @@ function ReviewSection() {
         <FaStar size={32} color="yellow" />
       </div>
       <div className={styles.reviewContainer}>
-        {REVIEWS.map((review) => {
+        {REVIEWS.map((review, index) => {
           return (
-            <span className={styles.review}>
+            <span key={index} className={styles.review}>
               <p className={styles.reviewContent}>{review.content}</p>
               <h5 className={styles.reviewName}>- {review.name}</h5>
             </span>

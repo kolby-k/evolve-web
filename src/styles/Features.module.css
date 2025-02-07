@@ -7,6 +7,7 @@
     min-height: 150vh;
     row-gap: 5em;
     margin-bottom: 10em;
+    padding: 0em 2em;
 }
 
 
@@ -16,9 +17,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0em;
-    padding: 0em 2em;
-    gap: 4em;
+    margin: 0em 4em;
 }
 
 .containerLeft {
@@ -27,9 +26,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0em;
-    padding: 0em 2em;
-    gap: 4em;
+    margin: 0em 4em;
+
 }
 
 .textContainer {
@@ -44,15 +42,21 @@
     display: flex;
     flex: 1;
     justify-content: center;
-    filter: drop-shadow(12em -2em 5em #6492ff10);
+    filter: drop-shadow(5em 2em 5em #6492ff1c);
 }
 
 .imageStyle {
     width: 100%;
     height: auto;
+    padding: 2em;
+    margin: 0em 2em;
 }
 
 .title {
+    display: none;
+}
+
+.featureTitle {
     font-size: 3em;
     color: #ffffff;
 }
@@ -72,12 +76,19 @@
 }
 
 
-
-
 @media (max-width: 1024px) {
     .featureSection { 
         row-gap: 0em;
         margin-bottom: 5em;
+    }
+
+    .title {
+        font-weight: 800;
+        font-size: 3.5em;
+        text-align: center;
+        margin: -0.2em 1em;
+        text-decoration: underline;
+        display: block;
     }
 
     .containerLeft {
@@ -88,20 +99,27 @@
         flex-direction: column-reverse;
      }
 
-    .title {
+     .textContainer {
+        align-self: center;
+        align-items: center;
+     }
+
+    .featureTitle {
         font-size: 2.5em;
+        font-weight: 600;
     }
     
     .description { 
         font-size: 1.75em;
+        font-weight: 500;
         
     }
 
-
-.imageStyle {
-    width: 60%;
-    height: auto;
-}
+    .imageStyle {
+        width: 60%;
+        height: auto;
+        margin: 0em 0em;
+    }
 
     
   }
@@ -109,15 +127,21 @@
   
   
   @media (max-width: 768px) {
-    .containerLeft {
-       flex-direction: column;
+
+    .featureSection { 
+        padding: 0em;
+        
     }
 
     .containerRight {
-        flex-direction: column-reverse;
-     }
+        width: 100%;
+    }
 
-    .title {
+    .containerLeft { 
+        width: 100%;
+    }
+
+    .featureTitle {
         font-size: 1.75em;
     }
     

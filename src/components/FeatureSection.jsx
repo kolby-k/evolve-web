@@ -38,10 +38,17 @@ const FEATURES = [
 function FeatureSection() {
   return (
     <div className={styles.featureSection}>
+      <h1 className={styles.title}>Evolve Features</h1>
       {FEATURES.map((feature, index) => {
         const layoutType = index % 2 === 0 ? "right" : "left";
-
-        return <Feature content={feature} layout={layoutType} />;
+        return (
+          <Feature
+            key={index}
+            content={feature}
+            layout={layoutType}
+            idx={index}
+          />
+        );
       })}
     </div>
   );
