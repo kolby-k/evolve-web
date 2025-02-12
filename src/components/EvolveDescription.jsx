@@ -32,11 +32,11 @@ function EvolveDescription() {
       }`}
     >
       <h3 className={styles.heading}>
-        Track every workout. Gain Insights. Build consistent routines. Discover
-        new exercises.
-        <span style={{ color: "#09002b" }}>
+        Track every workout. Discover new exercises. Build consistent routines.
+        Gain performance insights.
+        <span className={styles.headingHighlight}>
           {" "}
-          Ready to meet your ultimate gym companion?
+          And much more to discover...
         </span>
       </h3>
       <div className={styles.descriptionButtonContainer}>

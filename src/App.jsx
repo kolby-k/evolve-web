@@ -6,15 +6,17 @@ import Footer from "./components/Footer";
 import Home from "./screens/Home";
 import About from "./screens/About";
 import Download from "./screens/Download";
+import Pricing from "./screens/Pricing";
 
 function App() {
-  const SCREENS = ["home", "about", "download"];
+  const SCREENS = ["home", "pricing", "about", "download"];
 
   return (
     <Router>
       <Header buttonLabels={SCREENS} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<About />} />
         <Route path="/download" element={<Download />} />
       </Routes>

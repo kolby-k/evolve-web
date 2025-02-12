@@ -44,7 +44,7 @@ const FEATURES = [
 function FeatureSection() {
   return (
     <div className={styles.featureSection}>
-      <h1 className={styles.title}>Evolve Features</h1>
+      <h1 className={styles.title}>App Features</h1>
       {FEATURES.map((feature, index) => {
         const layoutType = index % 2 === 0 ? "right" : "left";
         return (

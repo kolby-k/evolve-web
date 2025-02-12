@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/FAQ.module.css";
-import { GoChevronDown } from "react-icons/go";
+import { GoChevronDown, GoChevronUp } from "react-icons/go";
 
 const Q_AND_A = [
   {
@@ -51,26 +51,29 @@ function FAQ() {
       <div className={styles.container}>
         <h4>Frequently Asked Questions</h4>
         <div className={styles.accordian}>
-          {Q_AND_A.map((i, index) => (
-            <div className={styles.accordianItem} key={index}>
-              <button
-                id={styles.button}
-                onClick={() => handleExpandQuestion(i.question)}
-              >
-                <span className={styles.question}>
-                  <h5>{i.question}</h5>
-                </span>
-                <span className={styles.chevron}>
-                  <GoChevronDown />
-                </span>
-              </button>
-              {activeQuestions.includes(i.question) && (
-                <div className={styles.answer}>
-                  <p>{i.answer}</p>
-                </div>
-              )}
-            </div>
-          ))}
+          {Q_AND_A.map((i, index) => {
+            const isOpen = activeQuestions.includes(i.question);
+            return (
+              <div className={styles.accordianItem} key={index}>
+                <button
+                  id={styles.button}
+                  onClick={() => handleExpandQuestion(i.question)}
+                >
+                  <span className={styles.question}>
+                    <h5>{i.question}</h5>
+                  </span>
+                  <span className={styles.chevron}>
+                    {isOpen ? <GoChevronUp /> : <GoChevronDown />}
+                  </span>
+                </button>
+                {isOpen && (
+                  <div className={styles.answer}>
+                    <p>{i.answer}</p>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

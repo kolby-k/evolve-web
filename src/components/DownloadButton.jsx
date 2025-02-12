@@ -8,7 +8,7 @@ function DownloadButton({ type = "primary" }) {
         type === "primary" ? styles.buttonEffect : styles.buttonSecondary
       }
     >
-      Download Now
+      {type === "primary" ? "Download Now" : "Download Evolve Today"}
     </button>
   );
 }

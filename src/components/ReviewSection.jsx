@@ -23,7 +23,7 @@ const REVIEWS = [
 function ReviewSection() {
   return (
     <div className={styles.reviewSection}>
-      <h2 className={styles.title}>The Number 1 Workout Tracking App</h2>
+      <h2 className={styles.title}>Your Ultimate Gym Companion</h2>
       <div className={styles.starContainer}>
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />
