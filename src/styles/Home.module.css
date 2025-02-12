@@ -36,39 +36,37 @@
   
   .heroContainer {
     display: flex;
-    height: 85vh;
-    width: 80%;
+    max-width: 1200px;
+    min-width: 330px;
+    height: 90vh;
     padding: 2em;
     margin: auto;
-    justify-items: center;
     flex-wrap: wrap;
-    padding-bottom: 10em;
-    text-align: center;
 }
 
 .homeContent {
     display: flex;
     flex: 1;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .leftSide {
     display: flex;
-    flex: 1;
     align-items: center;
     justify-content: center;
-    min-width: 50%;
+    width: 50%;
     flex-direction: column;
     align-self: center;
-    padding-bottom: 10em;
+    text-align: center;
 }
 
 .rightSide {
-  display: flex;
-  flex: 1;
+    display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 50%;
+    width: 50%;
+    height: 100%;
     filter: drop-shadow(15em 8em 5em #c8d8fd12);
 }
 
@@ -84,8 +82,9 @@
 }
 
 .featureImage {
-  max-width: 100%;
-  height: auto;
+  height: 80%;
+  width: auto;
+  object-fit: contain;
 }
 
 
@@ -114,7 +113,7 @@
     font-size: 4em;
     color: #ffffff;
     text-align: left;
-    padding: 0em 2em;
+    padding: 0em 1em;
     margin-bottom: 0.5em;
   }
 
@@ -167,9 +166,6 @@
 
 
 @media (max-width: 1024px) {
-  .heroContainer {
-      padding-bottom: 5em;
-  }
 
   .heading {
     font-size: 3em;
@@ -179,14 +175,32 @@
     flex-direction: column;
   }
 
+  .leftSide {
+    width: 100%;
+    padding-bottom: 0;
+
+}
+
+.rightSide {
+  justify-content: center;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.featureImage {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
 }
 
 
 
 @media (max-width: 768px) {
   .heroContainer {
-      flex-direction: column;  
-      padding-bottom: 2em;
       min-height: 80vh;
   }
 
@@ -195,24 +209,6 @@
   }
 
 
-  .leftSide {
-    flex: none;
-    width: 100%;
-    padding-bottom: 0;
-}
-
-.rightSide {
-    flex: none;
-    width: 80%;
-    max-width: 400px;
-    margin: auto;
-}
-
-.featureImage {
-    width: 80%;
-    height: auto;
-    object-fit: contain;
-}
 
 .title {
     font-size: 3em; /* Reduce font size */
@@ -222,14 +218,19 @@
     font-size: 2em;
 }
 
+.rightSide {
+    height: 70%;
+}
+
 }
 
 
 @media (max-width: 480px) {
 
 .featureImage {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-height: 100%;
+  
 }
 
 }

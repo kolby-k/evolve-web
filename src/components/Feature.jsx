@@ -19,6 +19,11 @@ function Feature({ content = {}, layout = "right", idx }) {
               className={styles.imageStyle}
               style={idx === 2 ? { marginRight: 50 } : {}}
             />
+            <img
+              src={content.secondarySource}
+              className={styles.imageStyleSmall}
+              style={idx === 2 ? { height: 400, width: "auto" } : {}}
+            />
           </div>
           <div className={styles.textContainer}>
             <h4 className={styles.featureTitle}>{content.title}</h4>
@@ -49,6 +54,10 @@ function Feature({ content = {}, layout = "right", idx }) {
           </div>
           <div className={styles.imageContainer}>
             <img src={content.imageSource} className={styles.imageStyle} />
+            <img
+              src={content.secondarySource}
+              className={styles.imageStyleSmall}
+            />
           </div>
         </div>
       )}
