@@ -16,15 +16,6 @@ const FEATURES = [
     imageSource: TrackingScreen,
   },
   {
-    title: "Endless Exercise Library",
-    description: [
-      "Explore over 250+ exercises",
-      "Master your technique with video demos",
-      "Create your own exercises",
-    ],
-    imageSource: ExercisesScreen,
-  },
-  {
     title: "Visualize Your Progress",
     description: [
       "View your workout history in detail",
@@ -32,6 +23,15 @@ const FEATURES = [
       "Stay motivated and progress towards your goals",
     ],
     imageSource: HistoryScreen,
+  },
+  {
+    title: "Endless Exercise Library",
+    description: [
+      "Explore over 250+ exercises",
+      "Master your technique with video demos",
+      "Create your own exercises",
+    ],
+    imageSource: ExercisesScreen,
   },
 ];
 

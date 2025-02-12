@@ -13,14 +13,14 @@ button {
     font-weight: 700;
   }
   
-  button:hover {
+  .buttonEffect:hover {
     /* Use the accent color on hover */
     border-color: #4169E1;
 
   }
   
-  button:focus,
-  button:focus-visible {
+  .buttonEffect:focus,
+  .buttonEffect:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
   
@@ -40,3 +40,16 @@ button {
     font-size: 1.25em;
     font-weight: 600;
 }
+
+.buttonSecondary:hover {
+  /* Use the accent color on hover */
+  border-color: #4169E1;
+
+}
+
+.buttonSecondary:focus,
+.buttonSecondary:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
