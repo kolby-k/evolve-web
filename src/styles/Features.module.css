@@ -47,7 +47,7 @@
 
 .imageStyle {
     height: auto;
-    width: 800px;
+    width: 100%;
     padding: 2em;
     margin: 0em 2em;
 }
@@ -71,6 +71,7 @@
     margin-bottom: 1em;
     font-weight: 500;
     color: #ffffff;
+    width: 100%;
 }
 
 .featureList {
