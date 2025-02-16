@@ -7,16 +7,16 @@ function HeroSection() {
   return (
     <div className={styles.bg}>
       <div className={styles.heroContainer}>
-        <div className={styles.leftSide}>
-          <h2 className={styles.title}>Evolve</h2>
-          <h3 className={styles.smallTitle}> Workout Tracker </h3>
+        <div className={styles.heroLeftContainer}>
+          <h1>Evolve</h1>
+          <h2> Workout Tracker </h2>
           <p className={styles.slogan}>Achieve More with Every Workout</p>
           <DownloadButton />
         </div>
-        <div className={styles.rightSide}>
+        <div className={styles.heroRightContainer}>
           <img
             src={WELCOME_SCREEN}
-            className={styles.featureImage}
+            className={styles.heroImage}
             alt="App Mockup"
           />
         </div>

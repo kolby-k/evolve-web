@@ -27,19 +27,16 @@ function EvolveDescription() {
   return (
     <div
       ref={ref}
-      className={`${styles.descriptionContainer} ${
+      className={`${styles.descriptionSection} ${
         isVisible ? styles.fadeIn : ""
       }`}
     >
-      <h3 className={styles.heading}>
+      <h3>
         Track every workout. Discover new exercises. Build consistent routines.
         Gain performance insights.
-        <span className={styles.headingHighlight}>
-          {" "}
-          And much more to discover...
-        </span>
+        <span> And so much more.</span>
       </h3>
-      <div className={styles.descriptionButtonContainer}>
+      <div>
         <DownloadButton type="secondary" />
       </div>
     </div>

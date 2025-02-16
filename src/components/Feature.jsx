@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Features.module.css";
+import styles from "../styles/Home.module.css";
 
 function Feature({ content = {}, layout = "right", idx }) {
   if (!content)
@@ -12,51 +12,46 @@ function Feature({ content = {}, layout = "right", idx }) {
   return (
     <>
       {layout === "right" ? (
-        <div className={styles.containerRight}>
-          <div className={styles.imageContainer}>
+        <div className={styles.feature}>
+          <div className={styles.featureImageContainer}>
             <img
               src={content.imageSource}
-              className={styles.imageStyle}
+              className={styles.largeFeatureImage}
               style={idx === 2 ? { marginRight: 50 } : {}}
             />
             <img
               src={content.secondarySource}
-              className={styles.imageStyleSmall}
+              className={styles.smallFeatureImage}
               style={idx === 2 ? { height: 400, width: "auto" } : {}}
             />
           </div>
-          <div className={styles.textContainer}>
-            <h4 className={styles.featureTitle}>{content.title}</h4>
-            <ul className={styles.featureList}>
+          <div className={styles.featureTextContainer}>
+            <h4>{content.title}</h4>
+            <ul>
               {content.description.map((d, index) => {
-                return (
-                  <li key={index} className={styles.description}>
-                    {d}
-                  </li>
-                );
+                return <li key={index}>{d}</li>;
               })}
             </ul>
           </div>
         </div>
       ) : (
-        <div className={styles.containerLeft}>
-          <div className={styles.textContainer}>
-            <h4 className={styles.featureTitle}>{content.title}</h4>
-            <ul className={styles.featureList}>
+        <div className={styles.feature}>
+          <div className={styles.featureTextContainer}>
+            <h4>{content.title}</h4>
+            <ul>
               {content.description.map((d, index) => {
-                return (
-                  <li key={index} className={styles.description}>
-                    {d}
-                  </li>
-                );
+                return <li key={index}>{d}</li>;
               })}
             </ul>
           </div>
-          <div className={styles.imageContainer}>
-            <img src={content.imageSource} className={styles.imageStyle} />
+          <div className={styles.featureImageContainer}>
+            <img
+              src={content.imageSource}
+              className={styles.largeFeatureImage}
+            />
             <img
               src={content.secondarySource}
-              className={styles.imageStyleSmall}
+              className={styles.smallFeatureImage}
             />
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../styles/FAQ.module.css";
+import styles from "../styles/Home.module.css";
 import { GoChevronDown, GoChevronUp } from "react-icons/go";
 
 const Q_AND_A = [
@@ -47,8 +47,8 @@ function FAQ() {
   };
 
   return (
-    <section className={styles.section}>
-      <div className={styles.container}>
+    <section id={styles.faqSection}>
+      <div>
         <h4>Frequently Asked Questions</h4>
         <div className={styles.accordian}>
           {Q_AND_A.map((i, index) => {

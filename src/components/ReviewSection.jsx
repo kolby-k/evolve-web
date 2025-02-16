@@ -22,21 +22,21 @@ const REVIEWS = [
 
 function ReviewSection() {
   return (
-    <div className={styles.reviewSection}>
-      <h2 className={styles.title}>Your Ultimate Gym Companion</h2>
-      <div className={styles.starContainer}>
+    <div id={styles.reviewSection}>
+      <h1>Your Ultimate Gym Companion</h1>
+      <div id={styles.stars}>
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />
       </div>
-      <div className={styles.reviewContainer}>
+      <div id={styles.reviews}>
         {REVIEWS.map((review, index) => {
           return (
             <span key={index} className={styles.review}>
-              <p className={styles.reviewContent}>{review.content}</p>
-              <h5 className={styles.reviewName}>- {review.name}</h5>
+              <p>{review.content}</p>
+              <h5>- {review.name}</h5>
             </span>
           );
         })}

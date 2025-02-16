@@ -8,13 +8,13 @@ import FAQ from "../components/FAQ";
 
 function HomeContent() {
   return (
-    <div className={styles.homeContent}>
+    <>
       <HeroSection />
       <EvolveDescription />
       <ReviewSection />
       <FeatureSection />
       <FAQ />
-    </div>
+    </>
   );
 }
 
