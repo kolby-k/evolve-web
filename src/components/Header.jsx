@@ -1,11 +1,16 @@
 // Header.jsx
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import styles from "../styles/Header.module.css";
 import evolveLogo from "../assets/evolve_logo.png";
 import utlils from "../utlils";
 
 function Header({ buttonLabels }) {
+  const activeScreen = useLocation().pathname;
+
+  console.log("buttonLabels screeen: ", buttonLabels);
+  console.log("Active screeen: ", activeScreen);
+
   return (
     <header className={styles.container}>
       <div className={styles.header}>
@@ -21,7 +26,15 @@ function Header({ buttonLabels }) {
               const path = label === "home" ? "/" : `/${label}`;
               return (
                 <li key={label}>
-                  <Link to={path} className={styles.link}>
+                  <Link
+                    to={path}
+                    className={styles.link}
+                    style={
+                      path === activeScreen
+                        ? { color: "#ffffff" }
+                        : { color: "#b9b9b9" }
+                    }
+                  >
                     {utlils.proper(label)}
                   </Link>
                 </li>

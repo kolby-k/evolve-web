@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
 import HeroSection from "../components/HeroSection";
 import EvolveDescription from "../components/EvolveDescription";
 import ReviewSection from "../components/ReviewSection";

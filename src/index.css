@@ -18,6 +18,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --bg: rgb(18,18,18);
+  --text-description: rgb(146, 145, 145);
+  --text-secondary: rgba(255,255,255,0.7);
+  --border: rgba(255,255,255,0.2);
+  --card-bg: rgb(27, 27, 31);
+  --blue-accent: rgba(65, 105, 225, 1);
 }
 
 * {
