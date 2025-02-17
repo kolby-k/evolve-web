@@ -36,9 +36,6 @@ function EvolveDescription() {
         Gain performance insights.
         <span> And so much more.</span>
       </h3>
-      <div>
-        <DownloadButton type="secondary" />
-      </div>
     </div>
   );
 }
