@@ -56,8 +56,9 @@
     border: 1px solid var(--border);
     border-radius: 5px;
     margin: 4em auto;
-    filter: drop-shadow( var(--drop-shadow) 5em -1em 4em);
     z-index: 0;
+    filter: drop-shadow( var(--drop-shadow) 5em -1em 4em);
+    -webkit-filter: drop-shadow( var(--drop-shadow)  5em 2em 5em);
 }
 
 .column {
@@ -198,6 +199,8 @@ li > .listIcon {
         z-index: 0;
         border: 0px;
         padding: 0em 2em;
+        filter: drop-shadow( var(--drop-shadow) 0em 0em 4em);
+        -webkit-filter: drop-shadow( var(--drop-shadow)  0em 0em 4em);
     }
 
     .column {

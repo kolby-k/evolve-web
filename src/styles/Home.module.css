@@ -102,7 +102,7 @@
   width: 100%;
   object-fit: contain;
   filter: drop-shadow( var(--drop-shadow) 5em 8em 5em);
-
+  -webkit-filter: drop-shadow( var(--drop-shadow) 5em 8em 5em);
 }
 
 
@@ -262,11 +262,13 @@
   padding: 2em;
   margin: 0em 2em;
   filter: drop-shadow( var(--drop-shadow) 5em 2em 5em);
+  -webkit-filter: drop-shadow( var(--drop-shadow)  5em 2em 5em);
 }
 
 .smallFeatureImage {
   display: none;
   filter: drop-shadow( var(--drop-shadow) 5em 2em 5em);
+  -webkit-filter: drop-shadow( var(--drop-shadow)  5em 2em 5em);
 }
 
 .featureTextContainer {
