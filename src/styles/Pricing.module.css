@@ -42,6 +42,7 @@
     font-size: 1em;
     border-radius: 20px;
     background-color: #121212;
+    color: #ffffff;
     border: 0;
     z-index: 5;
     margin: 0;
@@ -55,8 +56,8 @@
     border: 1px solid var(--border);
     border-radius: 5px;
     margin: 4em auto;
-    filter: drop-shadow(0em 0em 2em #6492ff0e);
-
+    filter: drop-shadow( var(--drop-shadow) 5em -1em 4em);
+    z-index: 0;
 }
 
 .column {
