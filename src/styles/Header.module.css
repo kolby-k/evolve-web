@@ -1,11 +1,11 @@
-.container {
+#header {
     width: 100vw;
     display: block;
     position: relative;
-    padding: 0em;
+    padding: 0em; 
 }
 
-.header {
+#header > .container {
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -41,7 +41,7 @@
     color: #eaeaea;
 }
 
-li {
+.navList > li {
     margin: 0.2em 1em;
 }
 
@@ -66,7 +66,7 @@ li {
 }
 
 @media (max-width: 480px) {
-    li {
+    .navList > li {
         margin: 0.5em;
     }
 }

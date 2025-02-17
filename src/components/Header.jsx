@@ -1,6 +1,6 @@
 // Header.jsx
 import React from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "../styles/Header.module.css";
 import evolveLogo from "../assets/evolve_logo.png";
 import utlils from "../utlils";
@@ -8,12 +8,9 @@ import utlils from "../utlils";
 function Header({ buttonLabels }) {
   const activeScreen = useLocation().pathname;
 
-  console.log("buttonLabels screeen: ", buttonLabels);
-  console.log("Active screeen: ", activeScreen);
-
   return (
-    <header className={styles.container}>
-      <div className={styles.header}>
+    <header id={styles.header}>
+      <div className={styles.container}>
         <div className={styles.logoContainer}>
           <a href="https://kolby-k.netlify.app/" target="_blank">
             <img src={evolveLogo} className="logo" alt="Evolve logo" />

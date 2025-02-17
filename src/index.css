@@ -24,6 +24,8 @@
   --border: rgba(255,255,255,0.2);
   --card-bg: rgb(27, 27, 31);
   --blue-accent: rgba(65, 105, 225, 1);
+  --tag-bg: rgb(170, 201, 248);
+  --tag-font: rgb(10, 71, 253);
 }
 
 * {
@@ -66,5 +68,10 @@ a:hover {
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+
+button {
+  cursor: pointer;
 }
 

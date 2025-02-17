@@ -56,7 +56,7 @@ function FAQ() {
             return (
               <div className={styles.accordianItem} key={index}>
                 <button
-                  id={styles.button}
+                  id={styles.accordianButton}
                   onClick={() => handleExpandQuestion(i.question)}
                 >
                   <span className={styles.question}>

@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 function DownloadButton({ type = "primary" }) {
   return (
     <button
+      id={styles.mainDownloadButton}
       className={
         type === "primary" ? styles.buttonEffect : styles.buttonSecondary
       }
