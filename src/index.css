@@ -27,8 +27,10 @@
   --blue-accent: rgba(65, 105, 225, 1);
   --tag-bg: rgb(170, 201, 248);
   --tag-font: rgb(10, 71, 253);
+  --drop-shadow-light: #2b3243d9;
   --drop-shadow: #09183ca0;
   --drop-shadow-strong: #1e3874bb;
+  
 }
 
 * {

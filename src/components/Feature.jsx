@@ -17,12 +17,10 @@ function Feature({ content = {}, layout = "right", idx }) {
             <img
               src={content.imageSource}
               className={styles.largeFeatureImage}
-              style={idx === 2 ? { marginRight: 50 } : {}}
             />
             <img
               src={content.secondarySource}
               className={styles.smallFeatureImage}
-              style={idx === 2 ? { height: 400, width: "auto" } : {}}
             />
           </div>
           <div className={styles.featureTextContainer}>
