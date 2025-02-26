@@ -103,8 +103,8 @@
   width: 100%;
   object-fit: contain;
   will-change: filter;
-  filter: drop-shadow( var(--drop-shadow-light) 5em 8em 5em);
-  -webkit-filter: drop-shadow( var(--drop-shadow-light) 5em 8em 5em);
+  filter: drop-shadow( var(--drop-shadow) 2em 5em 2em);
+  -webkit-filter: drop-shadow( var(--drop-shadow) 2em 5em 2em);
 }
 
 

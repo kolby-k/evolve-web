@@ -20,16 +20,17 @@
 
    --text-primary: white;
   --bg: rgb(18,18,18);
-  --text-description: rgb(146, 145, 145);
-  --text-secondary: rgba(255,255,255,0.7);
+  --text-description: rgb(239, 239, 239);
+  --text-secondary: rgba(255,255,255,0.9);
+  --text-muted: rgb(146, 145, 145);
   --border: rgba(255,255,255,0.2);
   --card-bg: rgb(27, 27, 31);
   --blue-accent: rgba(65, 105, 225, 1);
   --tag-bg: rgb(170, 201, 248);
   --tag-font: rgb(10, 71, 253);
   --drop-shadow-light: #2b3243d9;
-  --drop-shadow: #09183ca0;
   --drop-shadow-strong: #1e3874bb;
+  --drop-shadow: rgba(255, 255, 255, 0.1);
   
 }
 

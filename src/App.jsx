@@ -7,6 +7,7 @@ import Home from "./screens/Home";
 import About from "./screens/About";
 import Download from "./screens/Download";
 import Pricing from "./screens/Pricing";
+import Privacy from "./screens/Privacy";
 
 function App() {
   const SCREENS = ["home", "pricing", "about", "download"];
@@ -19,6 +20,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<About />} />
         <Route path="/download" element={<Download />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
       <Footer />
     </Router>

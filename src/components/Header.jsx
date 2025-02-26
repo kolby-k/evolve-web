@@ -12,9 +12,9 @@ function Header({ buttonLabels }) {
     <header id={styles.header}>
       <div className={styles.container}>
         <div className={styles.logoContainer}>
-          <a href="https://kolby-k.netlify.app/" target="_blank">
+          <Link to={"/"}>
             <img src={evolveLogo} className="logo" alt="Evolve logo" />
-          </a>
+          </Link>
         </div>
 
         <nav className={styles.nav}>
