@@ -67,8 +67,8 @@ function Pricing() {
   };
 
   return (
-    <div id={styles.screen}>
-      <div id={styles.titleLayout}>
+    <div className={styles.screen}>
+      <div className={styles.titleLayout}>
         <h1>Pricing</h1>
         <p>
           Start for free to begin tracking your workouts. Upgrade to premium for
@@ -76,7 +76,7 @@ function Pricing() {
         </p>
       </div>
 
-      <section id={styles.timePeriodToggle}>
+      <section className={styles.timePeriodToggle}>
         <div className={styles.toggleContainer}>
           <button
             onClick={() => setTimePeriod("month")}
@@ -103,7 +103,7 @@ function Pricing() {
           </button>
         </div>
       </section>
-      <div id={styles.pricingTable}>
+      <div className={styles.pricingTable}>
         {TIERS.map((price, index) => {
           // index 1 is the premium membership
           const annualPricingText = getAnnualCostText(price, index);
@@ -111,7 +111,7 @@ function Pricing() {
           return (
             <div key={index} className={styles.column}>
               {!isMonthly && price?.promotion && (
-                <span id={styles.promotionTag}>{price.promotion}</span>
+                <span className={styles.promotionTag}>{price.promotion}</span>
               )}
               <h2>{price.name}</h2>
               <h3>

@@ -4,41 +4,93 @@
   flex-direction: column;
   align-self: flex-end;
   justify-content: center;
+  padding: 1em;
 }
 
-.logoContainer {
+.topRow {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  justify-content:center;
   align-items: center;
-  height: 150px;
+  padding: 0.5em;
+}
+
+
+.logo { 
+  margin-bottom: 0.5em;
+  width: 90px;
+  height: 90px;
 }
 
 .companyName {
   font-size: 2em;
   margin: 0;
-  line-height: 0.5em;
-}
-
-.card {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0em 1em;
 }
 
 .slogan {
-  color: #888;
-  padding-left: 2px;
+  color: #b7b5b5;
+  margin: 0.2em;
+}
+
+.bottomRow {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+
+.resourceContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .linkContainer {
   display: flex;
-  height: 100px;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.policyContainer {
+  display: flex;
+  column-gap: 1.5em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+
+.heading {
+  margin-bottom: 0.4em;
+}
+
+.appStoreLink {
+  align-self: center;
+}
+
+.appStoreIcon {
+  width: 145px;
+  height: auto;
+  cursor: pointer;
+  padding: 2px;
+}
+
+#copyright { 
+  color: #a3a2a2;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .companyName {
+    font-size: 1.25em;
+  }
+
+  .slogan {
+    font-size: 15px;
+  }
 }

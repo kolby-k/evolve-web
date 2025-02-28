@@ -22,15 +22,14 @@
   }
   
   /* Main header */
-  h1 {
+  .screen  h1 {
     font-size: 2em;
     margin-bottom: 0.5em;
     text-align: center;
     color: var(--text-primary);
   }
   
-  /* Section headers */
-  h2 {
+.screen h2 {
     font-size: 1.5em;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
@@ -40,7 +39,7 @@
   }
   
   /* Subsection headers */
-  h3 {
+.screen  h3 {
     font-size: 1.2em;
     margin-top: 1.2em;
     margin-bottom: 0.5em;
@@ -48,14 +47,14 @@
   }
   
   /* Paragraph text styling */
-  p {
+  .screen p {
     line-height: 1.6;
     margin-bottom: 1em;
     color: var(--text-description);
   }
   
   /* Unordered list styling */
-  ul {
+  .screen ul {
     list-style-type: disc;
     margin: 10px 0 10px 20px;
     padding-left: 1em;
@@ -63,15 +62,33 @@
   }
   
   /* List items */
-  li {
+  .screen li {
     margin-bottom: 0.5em;
   }
   
   /* Emphasized text */
-  strong {
+  .screen strong {
     color: var(--text-primary);
   }
   
   .lastUpdated {
     text-align: center;
+  }
+
+
+  @media (max-width: 1024px) {
+    
+    .container { 
+      width: 70%;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    
+    .container { 
+      width: 90%;
+      min-width: 300px;
+    }
+
   }
