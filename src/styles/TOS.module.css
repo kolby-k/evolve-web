@@ -1,0 +1,94 @@
+/* TOS.module.css */
+
+/* Base screen styling */
+.screen {
+    display: block;
+    padding: 1em;
+    background-color: var(--bg); /* #121212 */
+    color: var(--text-primary);   /* white */
+    min-height: 100vh;
+  }
+  
+  /* Container for the policy content */
+  .container {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg); /* dark card background */
+    border-radius: 8px;
+    padding: 2em;
+    margin: 2em auto;
+    width: 60%;
+    max-width: 800px;
+  }
+  
+  /* Main header */
+  .screen  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: var(--text-primary);
+  }
+  
+.screen h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.2em;
+  }
+  
+  /* Subsection headers */
+.screen  h3 {
+    font-size: 1.2em;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    color: var(--text-secondary);
+  }
+  
+  /* Paragraph text styling */
+  .screen p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: var(--text-description);
+  }
+  
+  /* Unordered list styling */
+  .screen ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+    padding-left: 1em;
+    color: var(--text-description);
+  }
+  
+  /* List items */
+  .screen li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Emphasized text */
+  .screen strong {
+    color: var(--text-primary);
+  }
+  
+  .lastUpdated {
+    text-align: center;
+  }
+
+
+  @media (max-width: 1024px) {
+    
+    .container { 
+      width: 70%;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    
+    .container { 
+      width: 90%;
+      min-width: 300px;
+    }
+
+  }
