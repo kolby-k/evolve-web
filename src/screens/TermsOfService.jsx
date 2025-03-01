@@ -1,10 +1,10 @@
 import React from "react";
 import useScrollToTop from "../hooks/useScrollToTop";
 
-function Download() {
+function TermsOfService() {
   useScrollToTop();
 
-  return <div>Download</div>;
+  return <div>TermsOfService</div>;
 }
 
-export default Download;
+export default TermsOfService;

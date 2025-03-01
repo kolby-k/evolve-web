@@ -1,7 +1,9 @@
 import React from "react";
-import Privacy from "./Privacy";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 function About() {
+  useScrollToTop();
+
   return <div>About</div>;
 }
 

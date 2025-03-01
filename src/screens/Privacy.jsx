@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "../styles/Privacy.module.css";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const PRIVACY_POLICY_DATE = "February 27, 2025";
 const SUPPORT_EMAIL_ADDRESS = "support@evolve-app.ca";
 
 function Privacy() {
+  useScrollToTop();
+
   return (
     <div className={styles.screen}>
       <h1>Privacy Policy</h1>

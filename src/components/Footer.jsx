@@ -23,8 +23,8 @@ function Footer() {
             <Link to={"/privacy"}>Help Center</Link>
             <Link to={"/pricing"}>Pricing</Link>
             <Link to={"/about"}>About</Link>
-            <Link to={"/privacy"}>Contact Us</Link>
-            <Link to={"/privacy"}>Download</Link>
+            <Link to={"/contact"}>Contact Us</Link>
+            <Link to={"/download"}>Download</Link>
           </div>
           <a className={styles.appStoreLink}>
             <img className={styles.appStoreIcon} src={appStoreBadge} />
@@ -33,7 +33,7 @@ function Footer() {
         <div className={styles.policyContainer}>
           <Link to={"/privacy"}>Privacy Policy</Link>
 
-          <Link to={"/privacy"}>Terms of Service</Link>
+          <Link to={"/terms-of-service"}>Terms of Service</Link>
         </div>
         <p id={styles.copyright}>
           Copyright © {COPYRIGHT_YEAR} Kolby Klassen. All rights reserved.

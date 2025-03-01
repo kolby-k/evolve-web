@@ -8,6 +8,8 @@ import About from "./screens/About";
 import Download from "./screens/Download";
 import Pricing from "./screens/Pricing";
 import Privacy from "./screens/Privacy";
+import TermsOfService from "./screens/TermsOfService";
+import ContactUs from "./screens/ContactUs";
 
 function App() {
   const SCREENS = ["home", "pricing", "about", "download"];
@@ -19,8 +21,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/download" element={<Download />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
       <Footer />
     </Router>

@@ -33,8 +33,8 @@ function EvolveDescription() {
     >
       <h3>
         Track every workout. Discover new exercises. Build consistent routines.
-        Gain performance insights.
-        <span> And so much more.</span>
+        Review performance & insights.
+        <span> Get started for free.</span>
       </h3>
     </div>
   );

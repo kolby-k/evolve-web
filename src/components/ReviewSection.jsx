@@ -23,7 +23,7 @@ const REVIEWS = [
 function ReviewSection() {
   return (
     <div id={styles.reviewSection}>
-      <h1>Your Ultimate Gym Companion</h1>
+      <div className={styles.reviewTitle}>Your Ultimate Gym Companion</div>
       <div id={styles.stars}>
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />

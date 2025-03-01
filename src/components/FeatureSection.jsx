@@ -44,7 +44,7 @@ const FEATURES = [
 function FeatureSection() {
   return (
     <div id={styles.featureSection}>
-      <h2>Features</h2>
+      <div className={styles.featureTitle}>Features</div>
       {FEATURES.map((feature, index) => {
         const layoutType = index % 2 === 0 ? "right" : "left";
         return (

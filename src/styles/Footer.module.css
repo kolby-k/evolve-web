@@ -83,6 +83,7 @@
 #copyright { 
   color: #a3a2a2;
   font-size: 14px;
+text-align: center;
 }
 
 @media (max-width: 768px) {

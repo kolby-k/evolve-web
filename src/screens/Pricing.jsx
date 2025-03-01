@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/Pricing.module.css";
 import { FaCheckCircle } from "react-icons/fa";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const TIERS = [
   {
@@ -44,8 +45,9 @@ const TIERS = [
 
 function Pricing() {
   const [timePeriod, setTimePeriod] = useState("year");
-
   const isMonthly = timePeriod === "month";
+
+  useScrollToTop();
 
   const getAnnualCostText = (price, tierIndex) => {
     if (!isMonthly && tierIndex === 1) {

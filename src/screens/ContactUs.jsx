@@ -1,10 +1,10 @@
 import React from "react";
 import useScrollToTop from "../hooks/useScrollToTop";
 
-function Download() {
+function ContactUs() {
   useScrollToTop();
 
-  return <div>Download</div>;
+  return <div>Contact Us</div>;
 }
 
-export default Download;
+export default ContactUs;
