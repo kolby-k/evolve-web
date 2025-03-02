@@ -28,10 +28,11 @@
   --blue-accent: rgba(65, 105, 225, 1);
   --tag-bg: rgb(170, 201, 248);
   --tag-font: rgb(10, 71, 253);
+  --link: rgb(0, 115, 255);
+  --link-hover: rgb(205, 205, 255);
   --drop-shadow-light: #2b3243d9;
   --drop-shadow-strong: #1e3874bb;
   --drop-shadow: rgba(255, 255, 255, 0.1);
-  
 }
 
 * {
@@ -57,13 +58,13 @@ a {
   
   font-weight: 500;
   /* Accent color for links */
-  color: #4169E1;
+  color: var(--link);
   text-decoration: inherit;
 }
 
 a:hover {
   /* Slightly darker shade of the accent for hover */
-  color: #375ac7;
+  color: var(--link-hover);
 }
 
 
@@ -80,6 +81,14 @@ a:hover {
 button {
   cursor: pointer;
   color: var(--text-primary)
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
 }
 
 

@@ -22,7 +22,9 @@ function Footer() {
             <h3 className={styles.heading}>Resources</h3>
             <Link to={"/about"}>About</Link>
             <Link to={"/pricing"}>Pricing</Link>
-            <Link to={"/contact"}>Contact Us</Link>
+            <a href="mailto:support@evolve-app.ca?subject=Support%20Request">
+              Contact
+            </a>
             {/*           <Link to={"/"}>Help Center</Link> */}
             <Link to={"/download"}>Download</Link>
           </div>

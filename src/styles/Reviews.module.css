@@ -1,19 +1,23 @@
 .reviewSection {
-    margin-top: 7em;
+    margin: 5em 0;
     display: flex;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 0 2em;
+    max-width: 1800px;
+    height: 500px;
   }
   
   .stars {
-    display: block;
-    padding-top: 2em;
+    display: flex;
+    height: 100px;
+    align-items: center;
   }
   
   .reviewTitle {
     color: transparent;
-    background: linear-gradient(0.25turn, var(--text-primary), var(--text-muted));
+    background: linear-gradient(0.5turn, var(--text-primary), var(--text-muted));
     font-size: 4em;
     font-weight: 800;
     -webkit-background-clip: text;
@@ -31,6 +35,7 @@
   .review {
     display: block;
     padding: 1em;
+    width: 30vw;
   }
   
   .reviews p {
@@ -47,18 +52,22 @@
   /* Media Queries for Review Section */
   @media (max-width: 1024px) {
     .reviewSection {
-      margin-top: 6em;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      height: 100%;
     }
     .reviews {
       flex-direction: column;
       gap: 0;
     }
+
+    .review {
+      width: 80vw;
+    }
   }
   
   @media (max-width: 768px) {
-    .reviewSection {
-      margin-top: 4em;
-    }
+ 
     .reviewTitle {
       font-size: 3em;
     }

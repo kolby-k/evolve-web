@@ -4,15 +4,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 150vh;
     row-gap: 5em;
     margin-bottom: 5em;
     padding: 0em 2em;
+    max-width: 1800px;
   }
   
-  .featureSection > h2 {
-    display: none;
-  }
   
 .feature {
     display: flex;
@@ -20,8 +17,19 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 2em;
+    column-gap: 10em;
   }
 
+ 
+  .featureTitle {
+    color: transparent;
+    background: linear-gradient(var(--text-primary), var(--text-muted));
+    font-size: 4em;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
 
   .featureImageContainer {
     display: flex;
@@ -52,9 +60,14 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    margin-top: 2em;
-    align-self: start;
-    text-align: center;
+    margin: 1em;
+    text-align: left;
+  }
+  
+    
+  .featureTextContainer ul {
+    padding-right: 2em;
+    display: block;
   }
   
   .featureTextContainer li {
@@ -65,43 +78,35 @@
     color: #ffffff;
     width: 100%;
   }
-  
-  .featureTextContainer ul {
-    padding-right: 2em;
-    display: block;
-    text-align: left;
-  }
+
 
   .feature h4 {
     font-size: 3em;
     color: #ffffff;
     font-weight: 600;
+    text-align: center;
 }
 
-  
-  .featureTitle {
-    color: transparent;
-    background: linear-gradient(var(--text-primary), var(--text-muted));
-    font-size: 4em;
-    font-weight: 800;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-  
-
+.featureSection > div:nth-of-type(4) img:nth-of-type(1) {
+  width: 80%;
+  height: auto;
+}
   /* Media Queries for Feature Section */
   @media (max-width: 1024px) {
-  .feature {
+    .feature {
       flex-direction: column;
     }
+
     .featureSection > div:nth-of-type(3) {
       flex-direction: column-reverse;
     }
+
     .largeFeatureImage {
       height: 600px;
       width: auto;
       margin: 0em;
     }
+
     .featureTextContainer {
       align-self: center;
       align-items: center;
@@ -110,41 +115,43 @@
 
     .feature h4 {
       font-size: 2.5em;
-
-  }
+    }
   
   }
   
   @media (max-width: 768px) {
     .featureSection {
       row-gap: 0em;
-      margin-bottom: 2em;
+      margin-bottom: 0em;
       padding: 1em;
     }
-  .feature {
+
+    .feature {
       width: 100%;
     }
 
-    
     .largeFeatureImage {
       display: none;
     }
+    
     .smallFeatureImage {
       display: block;
       height: 400px;
       margin-top: 1em;
       width: auto;
     }
+
     .featureTextContainer li {
       font-size: 1.5em;
     }
+
     .featureTitle {
       font-size: 3em;
     }
 
     .feature h4 {
       font-size: 2em;
-  }
+    }
   
   }
   

@@ -322,8 +322,8 @@ function Privacy() {
           privacy legislation.
         </p>
         <p>
-          By using my services, you acknowledge and consent to the collection,
-          use, and transfer of your data in accordance with these standards and
+          By using Evolve, you acknowledge and consent to the collection, use,
+          and transfer of your data in accordance with these standards and
           regulations. For any questions regarding my privacy practices, please
           feel free to contact me at{" "}
           <a href={`mailto:${SUPPORT_EMAIL_ADDRESS}`}>

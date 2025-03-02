@@ -1,28 +1,31 @@
-.faqSection > div {
+
+
+.faqSection {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: 1000px;
     margin: auto;
-    max-width: 800px;
+    margin-bottom: 3em;
+    padding: 1em;
   }
   
-.faqSection .accordian {
+  .faqSection .accordian {
     display: flex;
+    flex-direction: column;
     flex: 1;
     width: 100%;
-    flex-direction: column;
-    margin-bottom: 5em;
+    row-gap: 2px;
   }
   
-.faqSection .accordianItem {
+  .faqSection .accordianItem {
     display: flex;
     flex-direction: column;
   }
   
-.accordianButton {
+  .accordianButton {
     display: flex;
-    flex: 1;
     justify-content: space-between;
     align-items: center;
     border-radius: 0;
@@ -41,11 +44,12 @@
 .faqSection .question {
     text-align: left;
     font-size: 1.25em;
+    width: 100%;
   }
   
 .faqSection .answer {
     display: block;
-    padding: 2em;
+    padding: 1em;
     padding-top: 0.75em;
     text-align: left;
     line-height: 1.25;

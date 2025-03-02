@@ -216,6 +216,7 @@ li > .listIcon {
     }
 
     .titleLayout {
+        padding: 0;
         width: 70%;
     }
   }

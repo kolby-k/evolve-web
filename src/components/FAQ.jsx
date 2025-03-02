@@ -48,33 +48,35 @@ function FAQ() {
 
   return (
     <section className={styles.faqSection}>
-      <div>
-        <h4>Frequently Asked Questions</h4>
-        <div className={styles.accordian}>
-          {Q_AND_A.map((i, index) => {
-            const isOpen = activeQuestions.includes(i.question);
-            return (
-              <div className={styles.accordianItem} key={index}>
-                <button
-                  className={styles.accordianButton}
-                  onClick={() => handleExpandQuestion(i.question)}
-                >
-                  <span className={styles.question}>
-                    <h5>{i.question}</h5>
-                  </span>
-                  <span className={styles.chevron}>
-                    {isOpen ? <GoChevronUp /> : <GoChevronDown />}
-                  </span>
-                </button>
-                {isOpen && (
-                  <div className={styles.answer}>
-                    <p>{i.answer}</p>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
+      <h4>Frequently Asked Questions</h4>
+      <div className={styles.accordian}>
+        {Q_AND_A.map((i, index) => {
+          const isOpen = activeQuestions.includes(i.question);
+          return (
+            <div className={styles.accordianItem} key={index}>
+              <button
+                className={styles.accordianButton}
+                onClick={() => handleExpandQuestion(i.question)}
+              >
+                <span className={styles.question}>
+                  <h5>{i.question}</h5>
+                </span>
+                <span className={styles.chevron}>
+                  {isOpen ? (
+                    <GoChevronUp size={14} />
+                  ) : (
+                    <GoChevronDown size={14} />
+                  )}
+                </span>
+              </button>
+              {isOpen && (
+                <div className={styles.answer}>
+                  <p>{i.answer}</p>
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ function HomeContent() {
   useScrollToTop();
 
   return (
-    <div>
+    <div className="home-screen">
       <HeroSection />
       <EvolveDescription />
       <ReviewSection />
