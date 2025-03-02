@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Features.module.css";
 import Feature from "./Feature";
 import TrackingScreen from "../assets/mockups/Tracking.webp";
 import ExercisesScreen from "../assets/mockups/Exercises.webp";
@@ -43,7 +43,7 @@ const FEATURES = [
 
 function FeatureSection() {
   return (
-    <div id={styles.featureSection}>
+    <div className={styles.featureSection}>
       <div className={styles.featureTitle}>Features</div>
       {FEATURES.map((feature, index) => {
         const layoutType = index % 2 === 0 ? "right" : "left";
@@ -53,6 +53,7 @@ function FeatureSection() {
             content={feature}
             layout={layoutType}
             idx={index}
+            styles={styles}
           />
         );
       })}

@@ -20,13 +20,13 @@ function Footer() {
         <div className={styles.resourceContainer}>
           <div className={styles.linkContainer}>
             <h3 className={styles.heading}>Resources</h3>
-            <Link to={"/privacy"}>Help Center</Link>
-            <Link to={"/pricing"}>Pricing</Link>
             <Link to={"/about"}>About</Link>
+            <Link to={"/pricing"}>Pricing</Link>
             <Link to={"/contact"}>Contact Us</Link>
+            {/*           <Link to={"/"}>Help Center</Link> */}
             <Link to={"/download"}>Download</Link>
           </div>
-          <a className={styles.appStoreLink}>
+          <a href="/" className={styles.appStoreLink}>
             <img className={styles.appStoreIcon} src={appStoreBadge} />
           </a>
         </div>

@@ -1,0 +1,101 @@
+.faqSection > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 800px;
+  }
+  
+.faqSection .accordian {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 5em;
+  }
+  
+.faqSection .accordianItem {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.accordianButton {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 0em 2em;
+  }
+  
+.faqSection .chevron {
+    padding: 1em;
+    cursor: pointer;
+    color: #eaeaea;
+  }
+  
+.faqSection .question {
+    text-align: left;
+    font-size: 1.25em;
+  }
+  
+.faqSection .answer {
+    display: block;
+    padding: 2em;
+    padding-top: 0.75em;
+    text-align: left;
+    line-height: 1.25;
+    border-bottom: 1px solid #757575;
+    font-size: 1em;
+  }
+
+  .faqSection h4 {
+    font-size: 3em;
+    text-align: center;
+    padding: 0.25em;
+
+  }
+
+  .faqSection h5 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .faqSection p {
+    font-size: 1.15em;
+    line-height: 1.2;
+    color: #eaeaea;
+  }
+  
+  /* Media Queries for FAQ Section */
+  @media (max-width: 1024px) {
+  .faqSection .question {
+      font-size: 1.15em;
+    }
+  .faqSection .answer {
+      font-size: 1em;
+    }
+
+    .faqSection h4 {
+       font-size: 2.5em;
+     }
+
+     .faqSection h5 {
+      font-size: 1.25em;
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 480px) {
+  .faqSection .question {
+      font-size: 17px;
+    }
+  .faqSection .answer {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,0 +1,136 @@
+/* Hero Background and Container */
+
+.bg {
+    position: relative;
+    z-index: 0;
+  }
+  
+
+.heroContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(var(--bg), #252424, var(--bg) 100%);
+    opacity: 1;
+    z-index: -1;
+    height: 100%;
+  }
+  
+  .heroContainer {
+    display: flex;
+    max-width: 1200px;
+    height: 1000px;
+    padding: 2em;
+    margin: auto;
+  }
+  
+  .heroLeftContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+  }
+  
+  .heroRightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+  }
+  
+  /* Hero Text Elements */
+  .heroContainer h1 {
+    font-size: 4em;
+    line-height: 1em;
+    margin: 0;
+  }
+  
+  .heroContainer h2 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  
+  .heroContainer p {
+    line-height: 1em;
+    font-size: 1.1em;
+  }
+  
+  .button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-family: inherit;
+    background-color: #2B6CB0;
+    border: 1px solid #3C82C8;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    font-size: 1.25em;
+    font-weight: 700;
+  }
+
+  /* Hero Image */
+  .heroImage {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    will-change: filter;
+    filter: drop-shadow(var(--drop-shadow) 2em 5em 2em);
+    -webkit-filter: drop-shadow(var(--drop-shadow) 2em 5em 2em);
+  }
+  
+
+
+  /* Media Queries for Hero Section */
+  @media (max-width: 1024px) {
+    .heroContainer {
+      width: auto;
+      height: 800px;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .heroContainer {
+      flex-direction: column;
+    }
+    .heroLeftContainer {
+      width: 100%;
+      height: 50%;
+    }
+    .heroRightContainer {
+      width: 100%;
+      height: 50%;
+    }
+    .heroImage {
+      height: 90%;
+      width: auto;
+      filter: drop-shadow(var(--drop-shadow-light) 3em 1em 3em);
+      -webkit-filter: drop-shadow(var(--drop-shadow-light) 3em 1em 3em);
+    }
+ 
+  }
+  
+  @media (max-width: 480px) {
+    .heroContainer {
+      width: auto;
+      height: 650px;
+    }
+    .heroImage {
+      max-height: 350px;
+      width: auto;
+      filter: drop-shadow(var(--drop-shadow-light) 3em 1em 3em);
+      -webkit-filter: drop-shadow(var(--drop-shadow-light) 3em 1em 3em);
+    }
+
+  }
+  

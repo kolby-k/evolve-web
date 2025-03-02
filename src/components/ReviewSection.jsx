@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Reviews.module.css";
 import { FaStar } from "react-icons/fa";
 
 const REVIEWS = [
@@ -22,16 +22,16 @@ const REVIEWS = [
 
 function ReviewSection() {
   return (
-    <div id={styles.reviewSection}>
+    <div className={styles.reviewSection}>
       <div className={styles.reviewTitle}>Your Ultimate Gym Companion</div>
-      <div id={styles.stars}>
+      <div className={styles.stars}>
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />
         <FaStar size={32} color="yellow" />
       </div>
-      <div id={styles.reviews}>
+      <div className={styles.reviews}>
         {REVIEWS.map((review, index) => {
           return (
             <span key={index} className={styles.review}>

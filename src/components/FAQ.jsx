@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/FAQ.module.css";
 import { GoChevronDown, GoChevronUp } from "react-icons/go";
 
 const Q_AND_A = [
@@ -47,7 +47,7 @@ function FAQ() {
   };
 
   return (
-    <section id={styles.faqSection}>
+    <section className={styles.faqSection}>
       <div>
         <h4>Frequently Asked Questions</h4>
         <div className={styles.accordian}>
@@ -56,7 +56,7 @@ function FAQ() {
             return (
               <div className={styles.accordianItem} key={index}>
                 <button
-                  id={styles.accordianButton}
+                  className={styles.accordianButton}
                   onClick={() => handleExpandQuestion(i.question)}
                 >
                   <span className={styles.question}>

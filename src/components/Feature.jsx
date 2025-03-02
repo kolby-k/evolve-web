@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
 
-function Feature({ content = {}, layout = "right", idx }) {
+function Feature({ content = {}, layout = "right", styles }) {
   if (!content)
     return (
       <div>

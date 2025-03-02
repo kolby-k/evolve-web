@@ -1,17 +1,7 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
 
-function DownloadButton({ type = "primary" }) {
-  return (
-    <button
-      id={styles.mainDownloadButton}
-      className={
-        type === "primary" ? styles.buttonEffect : styles.buttonSecondary
-      }
-    >
-      {type === "primary" ? "Download Now" : "Download Evolve Today"}
-    </button>
-  );
+function DownloadButton({ styles }) {
+  return <button className={styles}>Download Now</button>;
 }
 
 export default DownloadButton;

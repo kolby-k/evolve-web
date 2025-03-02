@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "../styles/Home.module.css";
-import DownloadButton from "./DownloadButton";
+import styles from "../styles/Description.module.css";
 
 function EvolveDescription() {
   const ref = useRef(null);
