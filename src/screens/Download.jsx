@@ -33,13 +33,13 @@ function Download() {
     <div className={styles.screen}>
       <h1>Get Evolve Today</h1>
       <p>
-        Download <strong>Evolve Workout Tracker</strong> for free on the Apple
-        App Store!
+        <strong>Evolve Workout Tracker</strong> is available for free on the
+        Apple App Store
       </p>
 
       <DownloadButton styles={styles.button} />
-
-      <h3>See What Others Are Saying:</h3>
+      <div className={styles.underline}></div>
+      <h3>See what others say:</h3>
       <div className={styles.reviews}>
         {reviewsData.map((review, index) => (
           <div key={index} className={styles.card}>

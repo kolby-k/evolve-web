@@ -40,24 +40,24 @@ function About() {
       <section className={styles.mission}>
         <h2>My Mission</h2>
         <p>
-          My goal with Evolve is to provide athletes with a powerful yet
-          easy-to-use tool that keeps them motivated and progressing. By using
-          Evolve, you can expect:
+          My goal with Evolve is to provide athletes with a powerful and
+          easy-to-use tool that keeps them motivated and progressing in the gym.
+          By using Evolve, you can expect:
         </p>
         <span className={styles.banner}>
           <ul>
             <li>
-              <strong>Effortless Workout Logging</strong> Quickly start logging
-              a workout and capture key details without disrupting your training
+              <strong>Effortless Workout Logging</strong> Quickly log your
+              workout and capture key details without disrupting your training
               flow.
             </li>
             <li>
-              <strong>Progress Tracking & Insights</strong> View your fitness
-              journey and learn from your workouts with meaningful insights and
-              relevant analytics.
+              <strong>Progress Tracking & Insights</strong> View your workout
+              history and gain meaningful insights along with relevant
+              analytics.
             </li>
             <li>
-              <strong>Secure and Reliable</strong> Remain confident that your
+              <strong>Secure and Reliable</strong> Rest assured that your
               workout history is safely stored and always accessible.
             </li>
           </ul>

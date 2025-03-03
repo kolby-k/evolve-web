@@ -2,7 +2,7 @@ import React from "react";
 import evolveLogo from "../assets/evolve_logo.png";
 import styles from "../styles/Footer.module.css";
 import { Link } from "react-router-dom";
-import appStoreBadge from "../assets/app-store-badge.svg";
+import AppStoreIcon from "./AppStoreIcon";
 
 const COPYRIGHT_YEAR = 2025;
 
@@ -11,7 +11,7 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles.topRow}>
         <Link to={"/"}>
-          <img src={evolveLogo} className={styles.logo} alt="Evolve logo" />
+          <img src={evolveLogo} className="logo" alt="Evolve logo" />
         </Link>
         <h1 className={styles.companyName}>Evolve Workout Tracker</h1>
         <p className={styles.slogan}>Achieve More with Every Workout</p>
@@ -20,24 +20,27 @@ function Footer() {
         <div className={styles.resourceContainer}>
           <div className={styles.linkContainer}>
             <h3 className={styles.heading}>Resources</h3>
-            <Link to={"/about"}>About</Link>
+            <Link to={"/"}>Home</Link>
             <Link to={"/pricing"}>Pricing</Link>
+            <Link to={"/about"}>About</Link>
+            <Link to={"/download"}>Download</Link>
             <a href="mailto:support@evolve-app.ca?subject=Support%20Request">
               Contact
             </a>
             {/*           <Link to={"/"}>Help Center</Link> */}
-            <Link to={"/download"}>Download</Link>
           </div>
-          <a href="/" className={styles.appStoreLink}>
-            <img className={styles.appStoreIcon} src={appStoreBadge} />
-          </a>
+          <AppStoreIcon />
         </div>
         <div className={styles.policyContainer}>
-          <Link to={"/privacy"}>Privacy Policy</Link>
+          <Link to={"/privacy"} className="policy-link">
+            Privacy Policy
+          </Link>
 
-          <Link to={"/terms-of-service"}>Terms of Service</Link>
+          <Link to={"/terms-of-service"} className="policy-link">
+            Terms of Service
+          </Link>
         </div>
-        <p id={styles.copyright}>
+        <p id="copyright">
           Copyright © {COPYRIGHT_YEAR} Kolby Klassen. All rights reserved.
         </p>
       </div>

@@ -7,6 +7,7 @@
   padding: 1em;
   max-width: 1800px;
   margin: auto;
+  background: linear-gradient(var(--bg), #252424);
 }
 
 .topRow {
@@ -18,16 +19,9 @@
   padding: 0.5em;
 }
 
-
-.logo { 
-  margin-bottom: 0.5em;
-  width: 90px;
-  height: 90px;
-}
-
 .companyName {
-  font-size: 2em;
   margin: 0;
+  padding-top: 1em;
 }
 
 .slogan {
@@ -75,22 +69,6 @@
   margin-bottom: 0.4em;
 }
 
-.appStoreLink {
-  align-self: center;
-}
-
-.appStoreIcon {
-  width: 145px;
-  height: auto;
-  cursor: pointer;
-  padding: 2px;
-}
-
-#copyright { 
-  color: #a3a2a2;
-  font-size: 14px;
-text-align: center;
-}
 
 .linkContainer > a {
   display: flex;

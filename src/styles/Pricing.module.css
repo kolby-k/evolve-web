@@ -163,7 +163,7 @@ li > .listIcon {
 }
 
 
-.column button {
+.column a {
    position: absolute;
    bottom: 20px;
    align-self: center;
@@ -176,7 +176,7 @@ li > .listIcon {
     font-family: inherit;
     /* Use the Surface color for buttons */
     background-color: var(--blue-accent);
-    border: 1px solid #3C82C8;
+    border: 1px solid var(--button-primary);
     color: #FFFFFF;
     cursor: pointer;
     transition: border-color 0.25s;
@@ -187,7 +187,6 @@ li > .listIcon {
   .buttonEffect:hover {
     /* Use the accent color on hover */
     border-color: #9cbedf;
-
   }
 
 

@@ -132,7 +132,13 @@ function Pricing() {
                   </li>
                 ))}
               </ul>
-              <button className={styles.buttonEffect}>Get Started</button>
+              <a
+                href={import.meta.env.VITE_PUBLIC_EVOLVE_APP_STORE_URL}
+                target="_blank"
+                style={{ justifyContent: "center" }}
+              >
+                <button className={styles.buttonEffect}>Get Started</button>
+              </a>
             </div>
           );
         })}
