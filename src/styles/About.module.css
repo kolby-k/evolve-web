@@ -61,7 +61,7 @@
   }
   
   .profileImage {
-    height: 400px;
+    height: 450px;
     width: auto;
     border-radius: 4px;
     margin-right: 100px;
@@ -76,7 +76,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 6em;
+    margin-top: 5em;
     overflow: hidden;
   }
   
@@ -84,9 +84,11 @@
     font-size: 1em;
     font-weight: 800;
     display: block;
-    margin-bottom: 0.2em;
   }
   
+  .mission p {
+    margin: 0;
+  }
   /* ========================
      List & Banner
      ======================== */

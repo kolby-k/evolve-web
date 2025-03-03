@@ -11,28 +11,37 @@ function About() {
     <div className={styles.screen}>
       <h1>Welcome to Evolve</h1>
       <span className={styles.description}>
-        Evolve is a mobile workout tracker designed to support high-performing
-        athletes in staying consistent and reaching their weightlifting goals.
+        Evolve is a mobile workout tracker designed to support athletes in
+        staying consistent and reaching their weightlifting goals.
       </span>
       <section className={styles.myStory}>
         <div>
           <h2>About Me</h2>
           <p>
-            I'm Kolby, the founder and developer behind Evolve Workout Tracker.
-            Over the years working out, I've learned that the secret to progress
-            revolves around consistency. Yet without measuring progress, it's
-            easy to lose sight of just how far you've come.
+            Hey! I’m Kolby, the developer behind Evolve Workout Tracker. As
+            someone interested in both fitness and software development, I
+            created Evolve to solve a challenge I faced- tracking my progress in
+            the gym in a way that was practical and could actually add value to
+            my existing routine.
           </p>
           <p>
-            This belief inspired the creation of Evolve—a simple, intuitive app
-            designed to track your workouts, review past performance, and
-            highlight your tangible improvements over time.
+            Over the years, I tried everything: notebooks, spreadsheets, my
+            phone’s notes app, and various workout tracking apps. But none of
+            them quite worked the way I needed. I wanted something simple,
+            flexible, and affordable—an app that fit my training style while
+            actually helping me track progress effectively.
           </p>
           <p>
-            What began as a tool for my personal training program quickly grew
-            into something more. Evolve isn’t merely a workout tracker; it’s a
-            partner that helps you build momentum, overcome plateaus, and
-            celebrate every step of your fitness journey.
+            That’s why I built Evolve. It’s designed to make workout tracking
+            effortless, so you can focus on what really matters—your progress.
+            With just a tap, you can start a workout with your exercises already
+            set up, quickly log your reps and weight, and instantly review your
+            performance.
+          </p>
+          <p>
+            What started as a curious idea turned into something bigger—a
+            valuable solution for anyone looking to take their training to the
+            next level. I’d love for you to give Evolve a try!
           </p>
         </div>
         <img src={Kolby} className={styles.profileImage}></img>
