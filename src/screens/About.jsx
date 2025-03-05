@@ -17,31 +17,30 @@ function About() {
       <section className={styles.myStory}>
         <div>
           <h2>About Me</h2>
+          <p>Hey! I’m Kolby, the developer behind Evolve Workout Tracker. </p>
           <p>
-            Hey! I’m Kolby, the developer behind Evolve Workout Tracker. As
-            someone interested in both fitness and software development, I
-            created Evolve to solve a challenge I faced- tracking my progress in
-            the gym in a way that was practical and could actually add value to
-            my existing routine.
+            Passionate about fitness and software development, I built Evolve as
+            both a practical tool and a personal challenge. My goal was simple:
+            to create an app that seamlessly tracks gym progress while adding
+            real value to any weightlifting routine.
           </p>
           <p>
-            Over the years, I tried everything: notebooks, spreadsheets, my
-            phone’s notes app, and various workout tracking apps. But none of
-            them quite worked the way I needed. I wanted something simple,
-            flexible, and affordable—an app that fit my training style while
-            actually helping me track progress effectively.
+            Over the years, I tried many of the usual methods—notebooks,
+            spreadsheets, my phone’s notes app, and various workout tracking
+            apps. But none of them quite met my needs. I wanted something
+            simple, intuitive, and portable.
           </p>
           <p>
-            That’s why I built Evolve. It’s designed to make workout tracking
-            effortless, so you can focus on what really matters—your progress.
-            With just a tap, you can start a workout with your exercises already
-            set up, quickly log your reps and weight, and instantly review your
-            performance.
+            That’s why I built Evolve. Designed to make workout tracking
+            effortless, it lets you focus on what really matters—your progress.
+            With just a tap, you can start a workout with your exercises
+            preloaded, quickly log your reps and weight, and instantly review
+            your performance.
           </p>
           <p>
-            What started as a curious idea turned into something bigger—a
-            valuable solution for anyone looking to take their training to the
-            next level. I’d love for you to give Evolve a try!
+            What started as a personal challenge turned into something bigger—a
+            powerful tool for anyone looking to take their training to the next
+            level. I’d love for you to give Evolve a try!
           </p>
         </div>
         <img src={Kolby} className={styles.profileImage}></img>
