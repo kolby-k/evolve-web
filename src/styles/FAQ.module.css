@@ -23,7 +23,7 @@
     flex-direction: column;
   }
   
-  .accordianButton {
+  .accordianButtonClosed {
     display: flex;
     flex: 1;
     border-radius: 0;
@@ -35,6 +35,10 @@
     max-width: 1000px;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .accordianButtonOpen {
+    border: 0px;
   }
   
 .faqSection .chevron {
@@ -51,7 +55,7 @@
 .faqSection .answer {
     display: block;
     padding: 1em;
-    padding-top: 0.75em;
+    padding-top: 0em;
     text-align: left;
     line-height: 1.25;
     border-bottom: 1px solid #757575;

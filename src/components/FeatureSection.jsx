@@ -12,9 +12,9 @@ const FEATURES = [
   {
     title: "Easy, Effortless Tracking",
     description: [
-      "Track every rep in real time",
-      "Built-in rest timer to stay on pace",
-      "Save your own custom workout templates",
+      "Track every workout in real time",
+      "Built-in rest timer",
+      "Create your own custom workout templates",
     ],
     imageSource: TrackingScreen,
     secondarySource: SingleTrackingScreen,
@@ -23,8 +23,8 @@ const FEATURES = [
     title: "Visualize Your Progress",
     description: [
       "View your workout history in detail",
-      "Gain insight into every set and rep performed",
-      "Stay motivated and progress towards your goals",
+      "Get insights into every set you've performed",
+      "Stay motivated to keep progressing",
     ],
     imageSource: HistoryScreen,
     secondarySource: SingleHistorycreen,
@@ -34,7 +34,7 @@ const FEATURES = [
     description: [
       "Explore over 250+ exercises",
       "Master your technique with video demos",
-      "Create your own exercises",
+      "Add your own custom exercises",
     ],
     imageSource: ExercisesScreen,
     secondarySource: SingleExerciseScreen,

@@ -50,17 +50,18 @@ function About() {
           <ul>
             <li>
               <strong>Effortless Workout Logging</strong> Quickly log your
-              workout and capture key details without disrupting your training
+              workout and capture key details without interrupting your training
               flow.
             </li>
             <li>
-              <strong>Progress Tracking & Insights</strong> View your workout
-              history and gain meaningful insights along with relevant
+              <strong>Progress Tracking & Insights</strong> Easily view your
+              workout history and get meaningful insights along with relevant
               analytics.
             </li>
             <li>
-              <strong>Secure and Reliable</strong> Rest assured that your
-              workout history is safely stored and always accessible.
+              <strong>Discover New Exercises</strong> Explore hundreds of
+              exercises in the library, or create your own to customize your
+              routine.
             </li>
           </ul>
         </span>

@@ -1,37 +1,37 @@
 import React, { useState } from "react";
 import styles from "../styles/FAQ.module.css";
-import { GoChevronDown, GoChevronUp } from "react-icons/go";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Q_AND_A = [
   {
-    question: "How do I track my workouts in real time?",
+    question: "How do I track my workouts with Evolve?",
     answer:
-      "Evolve offers real-time tracking for every set and rep. Simply start your workout session, and the app will automatically log your exercises. You can even see a timer for rest periods to help you stay on pace between sets.",
+      "Start a new workout with just a tap from the 'Workouts' tab, adding exercises as you go. Or, use one of our pre-made workout templates or your custom templates to follow a pre-made routine.",
   },
   {
-    question: "Can I create and save my own workout templates?",
+    question: "Can I create my own workout templates?",
     answer:
-      "Absolutely! You can easily build custom templates by adding exercises, sets, and reps. Once saved, you can reuse these templates for future workouts to streamline your routine.",
+      "Yes! With Evolve, you can easily create and save your custom workout templates. Simply select exercises, specify your sets and reps, and reuse these templates anytime to simplify your workouts.",
   },
   {
-    question: "How can I review my past workouts to see my progress?",
+    question: "How do I review past workouts to track my progress?",
     answer:
-      "Head over to the ‘History’ section to view detailed stats for every workout you’ve completed. You can track your progression over time, identify areas for improvement, and stay motivated to hit your goals.",
+      "Head to the 'History' section, where you can explore detailed stats from your past workouts. View your progress on a calendar or scroll through a list, and tap on any workout to see summary stats along with exercises and sets performed.",
   },
   {
-    question: "Is there a rest timer included?",
+    question: "Is there a rest timer between sets?",
     answer:
-      "Yes. Each time you log a set, a built-in rest timer will start automatically. It’s customizable and ensures you stay on schedule without needing a separate stopwatch or timer.",
+      "Absolutely! Evolve includes a built-in, customizable rest timer that can automatically start after each set, helping you keep the ideal pace without needing a separate timer. You can even customize the default duration based on your workout focus.",
   },
   {
-    question: "What if the exercise I need isn’t in your library?",
+    question: "What if an exercise I use isn't in the library?",
     answer:
-      "We offer a library of 250+ exercises with video demos to help you master your form, but you can also create your own exercises if something isn’t listed. This way, your routine is always 100% personalized.",
+      "Evolve offers a library of over 250 exercises with instructional videos, but you can also easily create and add your own exercises to fully personalize your workouts.",
   },
   {
-    question: "How do video demos help me improve my technique?",
+    question: "How do I sign up? Is it free?",
     answer:
-      "Each exercise in our library includes a brief video demonstration. These videos highlight the proper form and technique, so you can perform each move safely and effectively.",
+      "Evolve Workout Tracker is currently available exclusively on the Apple iOS App Store. Simply download the app and sign up effortlessly using your Apple ID—it's quick and easy!",
   },
 ];
 
@@ -55,18 +55,19 @@ function FAQ() {
           return (
             <div className={styles.accordianItem} key={index}>
               <button
-                className={styles.accordianButton}
+                className={[
+                  styles.accordianButtonClosed,
+                  isOpen && styles.accordianButtonOpen,
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
                 onClick={() => handleExpandQuestion(i.question)}
               >
                 <span className={styles.question}>
                   <h5>{i.question}</h5>
                 </span>
                 <span className={styles.chevron}>
-                  {isOpen ? (
-                    <GoChevronUp size={14} />
-                  ) : (
-                    <GoChevronDown size={14} />
-                  )}
+                  {isOpen ? <FaMinus size={14} /> : <FaPlus size={14} />}
                 </span>
               </button>
               {isOpen && (
