@@ -21,6 +21,8 @@ const REVIEWS = [
 ];
 
 function ReviewSection() {
+  /* return nothing to hide 'fake' reviews, until i have real reviews to use */
+  return <span style={{ height: "100px" }}></span>;
   return (
     <div className={styles.reviewSection}>
       <div className={styles.reviewTitle}>Your Ultimate Gym Companion</div>

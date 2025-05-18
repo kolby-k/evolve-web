@@ -1,4 +1,3 @@
-import React from "react";
 import useScrollToTop from "../hooks/useScrollToTop";
 import styles from "../styles/Download.module.css";
 import DownloadButton from "../components/DownloadButton";
@@ -30,15 +29,16 @@ function Download() {
   ];
 
   return (
-    <div className={styles.screen}>
-      <h1>Get Evolve Today</h1>
-      <p>
-        <strong>Evolve Workout Tracker</strong> is available for free on the
-        Apple App Store
-      </p>
+    <div style={{ display: "flex", flex: 1 }}>
+      <div className={styles.screen}>
+        <h1>Get Evolve Today</h1>
+        <p>
+          <strong>Evolve Workout Tracker</strong> is available for free on the
+          Apple App Store
+        </p>
 
-      <DownloadButton styles={styles.button} />
-      <div className={styles.underline}></div>
+        <DownloadButton styles={styles.button} />
+        {/* <div className={styles.underline}></div>
       <h3>See what others say:</h3>
       <div className={styles.reviews}>
         {reviewsData.map((review, index) => (
@@ -48,6 +48,7 @@ function Download() {
             <span>- {review.author}</span>
           </div>
         ))}
+      </div>*/}
       </div>
     </div>
   );

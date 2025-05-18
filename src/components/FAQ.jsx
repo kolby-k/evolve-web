@@ -52,7 +52,7 @@ function FAQ() {
   };
 
   return (
-    <section className={styles.faqSection}>
+    <section id="FAQ-section" className={styles.faqSection}>
       <h4>Frequently Asked Questions</h4>
       <div className={styles.accordian}>
         {Q_AND_A.map((i, index) => {

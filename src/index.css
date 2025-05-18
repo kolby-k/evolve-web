@@ -26,15 +26,15 @@
   --border: rgba(255,255,255,0.2);
   --card-bg: rgb(27, 27, 31);
   --blue-accent: rgba(65, 105, 225, 1);
-  --tag-bg: rgb(170, 201, 248);
+  --tag-bg: #1DB4FF;
   --tag-font: rgb(10, 71, 253);
   --link: rgb(0, 115, 255);
   --link-hover: rgb(205, 205, 255);
   --drop-shadow-light: #2b3243d9;
   --drop-shadow-strong: #1e3874bb;
   --drop-shadow: rgba(255, 255, 255, 0.1);
-  --button-primary: #2B6CB0;
-  --button-border: #3C82C8;
+  --button-primary: #0C6CF2;
+  --button-border: #1DB4FF;
 }
 
 * {
@@ -52,7 +52,9 @@ body {
 }
 
 #root {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
   max-width: 100vw;
 }
 
@@ -83,8 +85,11 @@ a:hover {
 
 button {
   cursor: pointer;
-  color: var(--text-primary)
+  color: var(--text-primary);
+  background-color: var(--button-primary);
+  border: 1px solid var(--button-border);
 }
+
 
 .home-screen {
   display: flex;

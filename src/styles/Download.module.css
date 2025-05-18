@@ -1,5 +1,6 @@
 .screen {
     display: flex;
+    flex: 1;
     padding: 0 2em;
     flex-direction: column;
     align-items: center;
@@ -13,8 +14,8 @@
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-family: inherit;
-    background-color: #2B6CB0;
-    border: 1px solid #3C82C8;
+    background-color: var(--button-primary);
+    border: 1px solid var(--button-border);
     color: #FFFFFF;
     cursor: pointer;
     transition: border-color 0.25s;
@@ -23,6 +24,12 @@
     margin-bottom: 3em;
     margin-top: 1em;
   }
+
+    .button:hover {
+    background-color: var(--button-border);
+    border: 1px solid var(--button-primary);
+  }
+  
 
   .underline {
     display: block;

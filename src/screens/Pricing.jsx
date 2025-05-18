@@ -11,34 +11,34 @@ const TIERS = [
       year: ["0", "0"],
     },
     symbol: "$",
-    currency: "USD",
+    currency: "CAD",
     promotion: null,
     subTitle: "Limited access to all features",
     features: [
       "Track 3 workouts per week.",
-      "Access to exercise library.",
       "Create 1 workout template.",
       "Create 3 exercises.",
+      "Access to exercise library.",
     ],
   },
   {
     name: "Premium",
-    priceAnnual: "$39.99",
-    priceMonthly: "$5.99",
+    priceAnnual: "$59.90",
+    priceMonthly: "$9.99",
     amount: {
-      month: ["6.99", "83.88"], //  month, year,
-      year: ["4.49", "53.88"],
+      month: ["9.99", "119.90"], //  month, year,
+      year: ["4.99", "59.90"],
     },
     symbol: "$",
-    currency: "USD",
-    promotion: "Save 36%",
-    subTitle: "Unlock all features and benefits",
+    currency: "CAD",
+    promotion: "Save 50%",
+    subTitle: "Remove all limits and more",
     features: [
       "Unlimited workouts.",
+      "Unlimited workout templates.",
+      "Create unlimited exercises.",
+      "Exercise charts / analytics.",
       "Access to exercise library.",
-      "Create Unlimited workout templates.",
-      "Create Unlimited exercises.",
-      "Exercise performance charts.",
     ],
   },
 ];
@@ -84,7 +84,7 @@ function Pricing() {
             onClick={() => setTimePeriod("month")}
             className={styles.toggleButton}
             style={
-              isMonthly ? { backgroundColor: "#4169E1", borderRadius: 20 } : {}
+              isMonthly ? { backgroundColor: "#0C6CF2", borderRadius: 20 } : {}
             }
           >
             Monthly
@@ -95,7 +95,7 @@ function Pricing() {
             style={
               !isMonthly
                 ? {
-                    backgroundColor: "#4169E1",
+                    backgroundColor: "#0C6CF2",
                     borderRadius: 20,
                   }
                 : {}
