@@ -16,6 +16,7 @@
     background: var(--card-bg); /* dark card background */
     border-radius: 8px;
     padding: 2em;
+    padding-top: 0;
     margin: 2em auto;
     width: 60%;
     max-width: 800px;
@@ -32,7 +33,7 @@
 .screen h2 {
     font-size: 1.5em;
     margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0em;
     color: var(--text-primary);
     border-bottom: 2px solid var(--border);
     padding-bottom: 0.2em;
@@ -42,7 +43,7 @@
 .screen  h3 {
     font-size: 1.2em;
     margin-top: 1.2em;
-    margin-bottom: 0.5em;
+    margin-bottom: -10px;
     color: var(--text-secondary);
   }
   
@@ -64,6 +65,7 @@
   /* List items */
   .screen li {
     margin-bottom: 0.5em;
+    line-height: 1.2em;
   }
   
   /* Emphasized text */
