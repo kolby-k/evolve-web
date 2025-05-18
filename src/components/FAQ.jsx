@@ -4,34 +4,39 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Q_AND_A = [
   {
-    question: "How do I track my workouts with Evolve?",
+    question: "How do I create an account?",
     answer:
-      "Start a new workout with just a tap from the 'Workouts' tab, adding exercises as you go. Or, use one of our pre-made workout templates or your custom templates to follow a pre-made routine.",
+      "Download Evolve Workout Tracker from the Apple App Store, then sign up with your Apple ID on the login screen.",
   },
   {
-    question: "Can I create my own workout templates?",
+    question: "Who can use Evolve?",
     answer:
-      "Yes! With Evolve, you can easily create and save your custom workout templates. Simply select exercises, specify your sets and reps, and reuse these templates anytime to simplify your workouts.",
+      "Evolve is available in English on the Apple App Store for users in Canada and the USA. You must be at least 13 years old to create an account.",
   },
   {
-    question: "How do I review past workouts to track my progress?",
+    question: "What features do I get with a free account?",
     answer:
-      "Head to the 'History' section, where you can explore detailed stats from your past workouts. View your progress on a calendar or scroll through a list, and tap on any workout to see summary stats along with exercises and sets performed.",
+      "Track up to three workouts per week, create one custom workout template, and add up to five custom exercises.",
   },
   {
-    question: "Is there a rest timer between sets?",
+    question: "What additional benefits do I get with Evolve Pro?",
     answer:
-      "Absolutely! Evolve includes a built-in, customizable rest timer that can automatically start after each set, helping you keep the ideal pace without needing a separate timer. You can even customize the default duration based on your workout focus.",
+      "With Evolve Pro you can track unlimited workouts, create unlimited templates and exercises, view progress charts that show total volume and estimated one‑rep max (1RM) for each exercise, and set default rest periods and rep‑range presets for different training goals.",
   },
   {
-    question: "What if an exercise I use isn't in the library?",
+    question: "How do I upgrade to Evolve Pro?",
     answer:
-      "Evolve offers a library of over 250 exercises with instructional videos, but you can also easily create and add your own exercises to fully personalize your workouts.",
+      "Open the app, go to your profile on the Home page, and tap the Pro banner. Choose a monthly or annual auto‑renewing plan—manage or cancel anytime in your Apple ID settings.",
   },
   {
-    question: "How do I sign up? Is it free?",
+    question: "Can I save a workout to use again later?",
     answer:
-      "Evolve Workout Tracker is currently available exclusively on the Apple iOS App Store. Simply download the app and sign up effortlessly using your Apple ID—it's quick and easy!",
+      "Yes. After finishing a workout, tap 'Save as Template' on the summary screen to reuse it next time.",
+  },
+  {
+    question: "What should I do if I need support or have feedback?",
+    answer:
+      "Please reach out to us from the 'Help' section in the app, or email us directly at support@evolve‑app.ca.",
   },
 ];
 
