@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "../styles/Features.module.css";
 import Feature from "./Feature";
-import TrackingScreen from "../assets/mockups/Tracking.webp";
-import ExercisesScreen from "../assets/mockups/Exercises.webp";
-import HistoryScreen from "../assets/mockups/History.webp";
-import SingleTrackingScreen from "../assets/mockups/single-tracking.webp";
-import SingleExerciseScreen from "../assets/mockups/single-exercises.webp";
-import SingleHistorycreen from "../assets/mockups/single-history.webp";
+import TrackingScreen from "../assets/mockups/Tracking.png";
+import ExercisesScreen from "../assets/mockups/Exercises.png";
+import HistoryScreen from "../assets/mockups/History.png";
+import SingleTrackingScreen from "../assets/mockups/single-tracking.png";
+import SingleHistorycreen from "../assets/mockups/single-history.png";
+import SingleExerciseScreen from "../assets/mockups/single-exercise.png";
 
 const FEATURES = [
   {
