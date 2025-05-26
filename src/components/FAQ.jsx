@@ -1,42 +1,42 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "../styles/FAQ.module.css";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Q_AND_A = [
   {
-    question: "How do I create an account?",
-    answer:
-      "Download Evolve Workout Tracker from the Apple App Store, then sign up with your Apple ID on the login screen.",
-  },
-  {
     question: "Who can use Evolve?",
     answer:
-      "Evolve is available in English on the Apple App Store for users in Canada and the USA. You must be at least 13 years old to create an account.",
+      "Evolve is currently available in English on the Apple App Store for users in Canada and the United States. You must be at least 13 years old to create an account.",
+  },
+  {
+    question: "How do I create an account?",
+    answer:
+      "Download Evolve Workout Tracker from the Apple App Store and sign up with your Apple ID.",
   },
   {
     question: "What features do I get with a free account?",
     answer:
-      "Track up to three workouts per week, create one custom workout template, and add up to five custom exercises.",
+      "You get full access to the exercise library, can track up to 3 workouts per week, create 1 custom workout template, and add up to 5 custom exercises.",
   },
   {
-    question: "What additional benefits do I get with Evolve Pro?",
+    question: "What do I get with Evolve Pro?",
     answer:
-      "With Evolve Pro you can track unlimited workouts, create unlimited templates and exercises, view progress charts that show total volume and estimated one‑rep max (1RM) for each exercise, and set default rest periods and rep‑range presets for different training goals.",
+      "Evolve Pro removes all limits: ·Track an unlimited number of workouts, ·create unlimited workout templates, ·create unlimited exercises, ·view progress charts showing total volume and estimated one-rep max (1RM) for each exercise, and ·set default rest periods and rep-range presets for different training goals.",
   },
   {
-    question: "How do I upgrade to Evolve Pro?",
+    question: "How do I upgrade to Evolve Pro?",
     answer:
-      "Open the app, go to your profile on the Home page, and tap the Pro banner. Choose a monthly or annual auto‑renewing plan—manage or cancel anytime in your Apple ID settings.",
+      "Open the app, tap the Evolve Pro banner on the Home screen, and choose a monthly or annual auto-renewing plan—manage. You can cancel at any time in your Apple ID settings.",
   },
   {
     question: "Can I save a workout to use again later?",
     answer:
-      "Yes. After finishing a workout, tap 'Save as Template' on the summary screen to reuse it next time.",
+      "Yes — after completing a workout, tap “Save as Template” on the summary screen. You'll find the template under Private Templates and can reuse it any time.",
   },
   {
     question: "What should I do if I need support or have feedback?",
     answer:
-      "Please reach out to us from the 'Help' section in the app, or email us directly at support@evolve‑app.ca.",
+      "Open the app and from the Profile screen tap Help ▸ Contact Support. You can also email support@evolve-app.ca.",
   },
 ];
 
@@ -77,7 +77,35 @@ function FAQ() {
               </button>
               {isOpen && (
                 <div className={styles.answer}>
-                  <p>{i.answer}</p>
+                  {(() => {
+                    const DELIMITER = "·";
+
+                    // If the answer contains the delimiter, build intro + bullet list
+                    if (i.answer.includes(DELIMITER)) {
+                      // 1️⃣ split → trim → drop empty elements
+                      const parts = i.answer
+                        .split(DELIMITER)
+                        .map((str) => str.trim())
+                        .filter(Boolean);
+
+                      // 2️⃣ first segment is the intro sentence (if any)
+                      const intro = parts.shift();
+
+                      return (
+                        <>
+                          {intro && <p>{intro}</p>}
+                          <ul className={styles.bulletList}>
+                            {parts.map((point, idx) => (
+                              <li key={idx}>{point}</li>
+                            ))}
+                          </ul>
+                        </>
+                      );
+                    }
+
+                    // Fallback: plain paragraph
+                    return <p>{i.answer}</p>;
+                  })()}
                 </div>
               )}
             </div>

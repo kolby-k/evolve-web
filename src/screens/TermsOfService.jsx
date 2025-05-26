@@ -54,7 +54,7 @@ function TermsOfService() {
           you must only use the Service with the involvement and consent of a
           parent or legal guardian.
         </p>
-        <h3>3.2 Children’s Privacy</h3>
+        <h3>3.2 Children's Privacy</h3>
         <p>
           We do not knowingly collect or solicit Personal Data from anyone under
           the age of 13. If you believe a child under the age of 13 has provided
@@ -96,13 +96,13 @@ function TermsOfService() {
           .
         </p>
 
-        <h2>5. Subscription &amp; Payments</h2>
+        <h2>5. Subscription & Payments</h2>
 
         <h3>5.1 Free and Premium Tiers</h3>
         <p>
           Evolve offers a free version with limited features and a premium
           (“Pro”) tier with additional or enhanced functionality. The Pro tier
-          is available via in-app purchases on a monthly or annual subscription
+          is available via in-app purchase on a monthly or annual subscription
           basis. Pricing and subscription details are presented within the
           Service.
         </p>
@@ -116,25 +116,52 @@ function TermsOfService() {
 
         <h3>5.3 Billing</h3>
         <p>
-          Payment processing is handled by Apple. Charges are applied to your
-          App Store account at the time of purchase and at the start of each
-          renewal period. Your subscription will automatically renew unless
-          auto-renew is turned off at least 24 hours before the end of the
+          All payment processing is handled by Apple. Charges are applied to
+          your App Store account at the time of purchase and at the start of
+          each renewal period. Your subscription will automatically renew unless
+          auto-renew is turned off at least 24&nbsp;hours before the end of the
           current period.
         </p>
 
-        <h3>5.4 Cancellation</h3>
+        <h3>5.4 Cancellation & Refunds</h3>
         <p>
-          You can manage your subscriptions and disable auto-renewal at any time
-          through your App Store account settings. Please review your local
-          consumer rights and any applicable refund laws, as these may affect
-          your cancellation and refund eligibility.
+          <strong>Cancellation.</strong> You can cancel at any time in
+          <em> Settings&nbsp;&gt; Apple ID&nbsp;&gt; Subscriptions</em>. Turning
+          off auto-renew prevents future charges but does not automatically
+          trigger a refund for the current term.
+        </p>
+        <p>
+          <strong>Refund Requests.</strong> Because Apple is the merchant of
+          record, any refund must be requested through Apple's
+          <em> Report a Problem </em>
+          portal at{" "}
+          <a href="https://reportaproblem.apple.com" target="_blank">
+            reportaproblem.apple.com
+          </a>
+          . Sign in, choose “<em>I'd like to Request a refund</em>,” select
+          Evolve Pro, and follow the on-screen steps. Most requests are decided
+          within a few business days.
+        </p>
+        <p>
+          <strong>Eligibility.</strong> Refund approval is at Apple's sole
+          discretion under the{" "}
+          <em>App Store Media services Terms and Conditions</em>; some purchases
+          may be marked <em>Not Eligible</em>. This policy does not limit any
+          statutory consumer rights that may apply in Canada or the United
+          States.
+        </p>
+        <p>
+          <strong>Developer Assistance.</strong> If you need help locating your
+          purchase or submitting a request, email us at
+          <a href="mailto:support@evolveapp.com"> support@evolveapp.com</a> with
+          a copy of your App Store receipt and we'll walk you through the
+          process or, where possible, submit a refund request on your behalf.
         </p>
 
         <h3>5.5 Changes in Pricing</h3>
         <p>
           We reserve the right to change subscription fees at our discretion. We
-          will provide at least 30 days’ advance notice via email before any fee
+          will provide at least 30 days' advance notice via email before any fee
           change takes effect. Continued use of the Service after such changes
           signifies your acceptance of the new fees.
         </p>
@@ -144,6 +171,42 @@ function TermsOfService() {
           While we strive to ensure that Evolve is available at all times, we
           cannot guarantee uninterrupted or error-free access. We may perform
           maintenance or updates that could result in temporary downtime.
+        </p>
+
+        <p>
+          <strong>Permanent Discontinuation.</strong> If we decide to
+          permanently discontinue the Service, we will provide at least{" "}
+          <strong>30&nbsp;days' advance notice</strong> via (i) the email
+          associated with your account and (ii) an in-app banner.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Data export window.</strong> During that 30-day period you
+            may export your workout history (CSV) through an in-app export tool
+            made available.
+          </li>
+          <li>
+            <strong>Data deletion.</strong> After the export window closes, all
+            user data will be permanently deleted within 90&nbsp;days, except
+            where retention is required by law.
+          </li>
+          <li>
+            <strong>Pro-rated refunds.</strong> For active <em>Evolve Pro </em>
+            subscriptions extending beyond the shutdown date, we will submit a
+            pro-rated refund request to Apple on your behalf or, if Apple
+            policies change, provide instructions for you to do so; final
+            approval remains at Apple's discretion.
+          </li>
+          <li>
+            <strong>Third-party integrations.</strong> All integrations (e.g.,
+            Apple Health) will be disabled on the shutdown date.
+          </li>
+        </ul>
+
+        <p>
+          Sections on intellectual property, disclaimers, limitation of
+          liability, and indemnification survive as described in § 12.3.
         </p>
 
         <h2>6. User Conduct &amp; Responsibilities</h2>
@@ -173,8 +236,8 @@ function TermsOfService() {
               information.
             </li>
             <li>
-              Attempt to gain unauthorized access to another user’s account or
-              the Service’s underlying technology.
+              Attempt to gain unauthorized access to another user's account or
+              the Service's underlying technology.
             </li>
           </ul>
         </p>
@@ -198,7 +261,7 @@ function TermsOfService() {
           All materials, features, and functionality (including software, text,
           graphics, logos, designs, etc.) included in or made available through
           the Service are owned or licensed by Kolby Klassen. See also{" "}
-          <a href="#credits">Section 16. Credits &amp; Attributions</a> below.
+          <a href="#credits">Section 16. Credits &amp; Attributions</a> below.
         </p>
         <h3>7.2 Trademarks</h3>
         <p>
@@ -217,13 +280,13 @@ function TermsOfService() {
         <h3>8.1 Links</h3>
         <p>
           The Service may contain links to or integrations with third-party
-          websites or services (e.g., Apple Health or Google Fit). Evolve does
+          websites or services (e.g., Apple Health or Google Fit). Evolve does
           not control or endorse any third-party content or services.
         </p>
         <h3>8.2 Data &amp; Permissions</h3>
         <p>
-          If you enable health or fitness integrations, such as Apple Health or
-          Google Fit, the data shared or accessed from those platforms will be
+          If you enable health or fitness integrations, such as Apple Health or
+          Google Fit, the data shared or accessed from those platforms will be
           used as set forth in the <Link to="/privacy">Privacy Policy</Link>.
         </p>
         <p>
@@ -355,7 +418,7 @@ function TermsOfService() {
         <h3>16.1 Exercise Videos</h3>
         <p>
           All exercise videos featured in the Service are credited to the
-          original creator, Gym Visual / © 2023 Aliaksandr Makatserchyk. Evolve
+          original creator, Gym Visual / © 2023 Aliaksandr Makatserchyk. Evolve
           has purchased the videos under a Non-Exclusive Commercial Royalty-Free
           License (N-CRFL). For more information, visit{" "}
           <a href="https://gymvisual.com/" target="_blank">
@@ -377,7 +440,7 @@ function TermsOfService() {
         <h3>16.3 Apple Trademark</h3>
         <p>
           The Apple App Store logo is a trademark of Apple Inc. Use is subject
-          to Apple’s brand guidelines.
+          to Apple's brand guidelines.
         </p>
 
         <hr style={{ width: "50%" }} />
