@@ -11,7 +11,7 @@ const Q_AND_A = [
   {
     question: "How do I create an account?",
     answer:
-      "Download Evolve Workout Tracker from the Apple App Store and sign up with your Apple ID.",
+      "Download Evolve Workout Tracker from the Apple App Store and sign up with your Apple ID. It is 100% free to get started!",
   },
   {
     question: "What features do I get with a free account?",
@@ -21,22 +21,22 @@ const Q_AND_A = [
   {
     question: "What do I get with Evolve Pro?",
     answer:
-      "Evolve Pro removes all limits: ·Track an unlimited number of workouts, ·create unlimited workout templates, ·create unlimited exercises, ·view progress charts showing total volume and estimated one-rep max (1RM) for each exercise, and ·set default rest periods and rep-range presets for different training goals.",
+      "Evolve Pro removes all limits: ·Track unlimited workouts ·Create unlimited workout templates ·Add unlimited exercises ·View progress charts for every exercise ·Customize default rest durations and rep ranges per workout focus",
   },
   {
     question: "How do I upgrade to Evolve Pro?",
     answer:
-      "Open the app, tap the Evolve Pro banner on the Home screen, and choose a monthly or annual auto-renewing plan—manage. You can cancel at any time in your Apple ID settings.",
+      "Open the Evolve Workout Tracker app, tap the Evolve Pro banner on the Home screen, and choose a monthly or annual plan. All subscriptions are processed via Apple in-app purchase and can be cancelled anytime in your Apple ID settings.",
   },
   {
     question: "Can I save a workout to use again later?",
     answer:
-      "Yes — after completing a workout, tap “Save as Template” on the summary screen. You'll find the template under Private Templates and can reuse it any time.",
+      "Yes—workouts can be saved as templates. After you finish a workout, tap Save as Template on the summary screen, or later from the history screen. Your templates live under Private Templates and can be reused anytime. You can also build custom templates from scratch.",
   },
   {
-    question: "What should I do if I need support or have feedback?",
+    question: "What should I do if I need support or help?",
     answer:
-      "Open the app and from the Profile screen tap Help ▸ Contact Support. You can also email support@evolve-app.ca.",
+      "Open the Evolve Workout Tracker app, and from the Profile screen tap Help ▸ Contact Support. You can also email support@evolve-app.ca.",
   },
 ];
 

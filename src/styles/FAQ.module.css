@@ -70,19 +70,24 @@
 
 .faqSection h5 {
   font-size: 1.5em;
+  line-height: 1.25em;
   font-weight: 600;
 }
 
 .faqSection p {
   font-size: 1.15em;
-  line-height: 1.2;
+  line-height: 1.2em;
   color: #eaeaea;
 }
 
 .faqSection ul {
   font-size: 1.15em;
-  line-height: 1.2;
+  line-height: 1.2em;
   color: #eaeaea;
+}
+
+.faqSection li {
+  margin: 4px;
 }
 
 /* Media Queries for FAQ Section */
